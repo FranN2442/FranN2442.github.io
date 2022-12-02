@@ -59,9 +59,43 @@ def PaginaCategorias(items):
 </html>"""
 
     escribirHTML("PaginaCategorias",html_content)
+
+def PaginaPrincipalMTB(items):
+    html_content = f"""
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <title>Rent Bike Mallorca</title>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel="stylesheet" href="../css/mtb.css" type="text/css"/>
+                </head>
+
+                <body>
+                    <div id="contenedor">
+                    """
+
+    for item in items:
+        if item.get('type') == 'MTB':
+
+            html_content +="""
+                <a id="link" href="PaginasIndividuales/{serial}.html">
+                    <div class="box"> 
+                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <p id="divText">{brand}: {model}</p>
+                    </div>
+                </a>""".format(model = item.get('model'),brand = item.get('brand'),serial = item.get('serial'))
+    html_content +="""
+                </body>
+            </html>"""
+            
+
+    escribirHTML("PaginaMTB",html_content)
     
 if __name__ == "__main__":
     
     items = cargarDatos()
 
     PaginaCategorias(items)
+
+    PaginaPrincipalMTB(items)
