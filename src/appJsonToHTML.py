@@ -1,16 +1,19 @@
 import json
 
+
 def escribirHTML(nombre, contenido):
 
     with open("html/" + nombre + ".html", "w+") as html_file:
         html_file.write(contenido)
         print("HTML file created successfully")
 
+
 def cargarDatos(ruta='DataBase/bicisCarretera.json'):
     with open(ruta) as contenido:
         jsondoc = json.load(contenido)
         mainkey = jsondoc.get('documents')
         return mainkey
+
 
 def PaginaCategorias(items):
 
@@ -58,7 +61,8 @@ def PaginaCategorias(items):
     </body>
 </html>"""
 
-    escribirHTML("PaginaCategorias",html_content)
+    escribirHTML("PaginaCategorias", html_content)
+
 
 def PaginaPrincipalMTB(items):
     html_content = f"""
@@ -78,24 +82,61 @@ def PaginaPrincipalMTB(items):
     for item in items:
         if item.get('type') == 'MTB':
 
-            html_content +="""
+            html_content += """
                 <a id="link" href="PaginasIndividuales/{serial}.html">
                     <div class="box"> 
                         <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
                         <p id="divText">{brand}: {model}</p>
                     </div>
-                </a>""".format(model = item.get('model'),brand = item.get('brand'),serial = item.get('serial'))
-    html_content +="""
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+    html_content += """
                 </body>
             </html>"""
-            
 
-    escribirHTML("PaginaMTB",html_content)
-    
+    escribirHTML("PaginaMTB", html_content)
+
+
+def PaginaPrincipalCarretera(items):
+    html_content = f"""
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <title>Rent Bike Mallorca</title>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel="stylesheet" href="../css/carretera.css" type="text/css"/>
+                </head>
+
+                <body>
+                    <div id="contenedor">
+                    """
+
+    for item in items:
+        if item.get('type') == 'CARRETERA':
+
+            html_content += """
+                <a id="link" href="PaginasIndividuales/{serial}.html">
+                    <div class="box"> 
+                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0%22%3E"
+                        <p id="divText">{brand} : {model}</p>
+                    </div>
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+        else:
+            pass
+    html_content += """
+                </div>
+            </body>
+        </html>"""
+
+    escribirHTML("PaginaCarretera", html_content)
+
+
 if __name__ == "__main__":
-    
+
     items = cargarDatos()
 
     PaginaCategorias(items)
 
     PaginaPrincipalMTB(items)
+    
+    PaginaPrincipalCarretera(items)
