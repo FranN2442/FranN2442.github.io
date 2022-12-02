@@ -11,7 +11,9 @@ def cargarDatos(ruta='DataBase/bicisCarretera.json'):
         jsondoc = json.load(contenido)
         mainkey = jsondoc.get('documents')
         return mainkey
-    
+
+
+
 if __name__ == "__main__":
     
     items = cargarDatos()
