@@ -1,0 +1,180 @@
+body,html{margin:0;padding:0;height:50%;}
+#contenedor{
+
+  display: block;
+  
+
+
+}
+.mtb 
+{
+  top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carretera 
+{
+  top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.e-bike
+{
+  top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+video.fillWidth {
+  width: 100%;
+  opacity: 100;
+}
+p{
+    
+    font-size: 1rem;
+    color: #A0522D;
+    font-family: Verdana;
+    font-family: 'PT Sans';
+    margin: 0px;
+}
+h2{
+    
+    font-size: 2rem;
+    color: #A0522D;
+    font-family: Verdana;
+    font-family: 'PT Sans';
+}
+.wrap{
+    
+    
+  text-align: center;
+  padding: 1rem 2rem;
+  border: 3px solid wheat;
+  backdrop-filter: blur(10px);
+  width: 300px;
+  height: 110px;
+  border-radius: 5px
+        
+    
+}
+a{
+
+  text-decoration: none
+}
+header{
+
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#presentacion{
+
+  color: wheat;
+  font-size: 75px;
+  text-align: center;
+  
+
+}
+#menu_desplegable{
+  position: sticky;
+  top: 0;
+}
+#desplegable {
+  display: none;
+}
+
+#desplegable:checked ~ .menu {
+  width: 100%;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 3px solid black;
+  height: 85px;
+}
+#desplegable:checked ~ .menu > ul {
+  display: block;
+  opacity: 1;
+  position: sticky;
+}
+#desplegable:checked ~ .menu > .barry {
+  display: none;
+}
+
+.menu {
+  display: block;
+  align-self: left;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+.menu div.barry { 
+  width: 40px;
+  margin: 27px auto;
+}
+.menu div.barry .bar {
+  display: block;
+  position: sticky;
+  width: 100%;
+  height: 5px;
+  margin-top: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.menu ul {
+  opacity: 0;
+  display: none;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+.menu ul li {
+  display: inline-block;
+  position: sticky;
+}
+.menu ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px;
+  color: black;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+.menu ul li a:hover {
+  border-color: black;
+}
+.menu ul li a:target {
+  border-bottom-color: black;
+}

@@ -25,39 +25,63 @@ def PaginaCategorias(items):
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/PaginaCategorias.css" type="text/css"/>
-    </head>
+        </head>
     <body>
-        <header>
-            <div id="presentacion">
-                <h1>Bienvenidos a<br>Bike Rental</h1>
+        <section>
+            <nav id = "menu_desplegable">
+                <input type='checkbox' id='desplegable'>
+                <label class='menu' for='desplegable'>
+
+                    <div class='barry'>
+                        <span class='bar'></span>
+                        <span class='bar'></span>
+                        <span class='bar'></span>
+                        <span class='bar'></span>
+                    </div>
+
+                    <ul>
+                        <li><a id='home' href='#presentacion'>Home</a></li>
+                        <li><a id='about' href='#about'>About</a></li>
+                        <li><a id='contact' href='#contact'>Contact</a></li>
+                        <li><a id='PaginaMTB' href='PaginaMTB.html'>MTB</a></li>
+                        <li><a id='PaginaCarretera' href='PaginaCarretera.html'>Carretera</a></li>
+                        <li><a id='PaginaMTB' href=-Bike</a></li>
+                    </ul>
+
+                </label>
+            </nav>
+            <header>
+                <div id="presentacion">
+                    <h1>Bienvenidos a<br>Bike Rental</h1>
+                </div>
+            </header>
+            <div id="contenedor">
+                <a href="PaginaMTB.html">
+                    <div class="mtb">
+                        <div class="wrap">
+                            <h2>MOUNTAIN BIKE</h2>
+                            <p>LOVE TO ADRENALINE</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="PaginaCarretera.html">    
+                    <div class="carretera">
+                        <div class="wrap">
+                            <h2>CARRETERA</h2>
+                            <p>LOVE TO RIDE</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="PaginaE-Bike.html">
+                    <div class="e-bike">
+                        <div class="wrap">
+                            <h2>E-BIKE</h2>
+                            <p>RIDE WITH E-HELP</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </header>
-        <div id="contenedor">
-            <a href="PaginaMTB.html">
-                <div class="mtb">
-                    <div class="wrap">
-                        <h2>MOUNTAIN BIKE</h2>
-                        <p>LOVE TO ADRENALINE</p>
-                    </div>
-                </div>
-            </a>
-            <a href="PaginaCarretera.html">    
-                <div class="carretera">
-                    <div class="wrap">
-                        <h2>CARRETERA</h2>
-                        <p>LOVE TO RIDE</p>
-                    </div>
-                </div>
-            </a>
-            <a href="PaginaE-Bike.html">
-                <div class="e-bike">
-                    <div class="wrap">
-                        <h2>E-BIKE</h2>
-                        <p>RIDE WITH E-HELP</p>
-                    </div>
-                </div>
-            </a>
-        </div>
+        </section>
     </body>
 </html>"""
 
@@ -117,7 +141,7 @@ def PaginaPrincipalCarretera(items):
             html_content += """
                 <a id="link" href="PaginasIndividuales/{serial}.html">
                     <div class="box"> 
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0%22%3E"
+                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0%22%3E">
                         <p id="divText">{brand} : {model}</p>
                     </div>
                 </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
@@ -138,5 +162,5 @@ if __name__ == "__main__":
     PaginaCategorias(items)
 
     PaginaPrincipalMTB(items)
-    
+
     PaginaPrincipalCarretera(items)
