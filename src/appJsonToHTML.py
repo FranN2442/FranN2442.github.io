@@ -154,6 +154,41 @@ def PaginaPrincipalCarretera(items):
 
     escribirHTML("PaginaCarretera", html_content)
 
+def PaginaPrincipalEbike(items):
+    html_content = f"""
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <title>Rent Bike Mallorca</title>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel="stylesheet" href="../css/ebike.css" type="text/css"/>
+                </head>
+
+                <body>
+                    <div id="contenedor">
+                    """
+
+    for item in items:
+        if item.get('type')=='EBIKE':
+
+            html_content +="""
+                <a id="link" href="PaginasIndividuales/{serial}.html">
+                    <div class="box"> 
+                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <p id="divText">{brand} : {model}</p>
+                    </div>
+                </a>""".format(model = item.get('model'),brand = item.get('brand'),serial = item.get('serial'))
+        else:
+            pass
+    html_content +="""
+                </div>
+            </body>
+        </html>"""
+            
+
+    escribirHTML("PaginaE-Bike",html_content)
+
 
 if __name__ == "__main__":
 
@@ -164,3 +199,5 @@ if __name__ == "__main__":
     PaginaPrincipalMTB(items)
 
     PaginaPrincipalCarretera(items)
+
+    PaginaPrincipalEbike(items)
