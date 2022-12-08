@@ -1,3 +1,4 @@
+body,html{margin:0;padding:0;height:50%;}
 .img{
       
     margin: 0px;
@@ -31,9 +32,9 @@
 }
 .box{
   
-    border: 2px solid;
+  border: 0px solid;
   padding: 10px;
-  box-shadow: 5px 10px #888888;;
+  box-shadow: 0 0 10px grey;
   border-radius: 10px;
   background-color: white;
   width: 230px;
@@ -41,5 +42,31 @@
   justify-self: center;
   text-align: center;
   
+  
+}
+nav{
+    
+  height: 50px;
+  border: solid black 5px;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+}
+#lista li{
+  
+  display:inline;
+  padding: 5px;
+  margin: 10px
+}
+#lista a{
+  
+  text-decoration: none;
+  color: black
+  
+}
+#lista li:hover{
+  
+  border: 3px black solid;
+  border-radius: 5px
   
 }
