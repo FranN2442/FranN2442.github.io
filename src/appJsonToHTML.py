@@ -219,11 +219,11 @@ def PaginasIndividuales(items):
         <body>
             <nav>
                 <ul id="lista">
-                    <li><a href="PaginaCategorias.html">HOME</a></li>
+                    <li><a href="../PaginaCategorias.html">HOME</a></li>
                     <li><a href="">CONTACT</a></li>
-                    <li><a href="PaginaMTB.html">MTB</a></li>
-                    <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                    <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                    <li><a href="../PaginaMTB.html">MTB</a></li>
+                    <li><a href="../PaginaCarretera.html">CARRETERA</a></li>
+                    <li><a href="../PaginaE-Bike.html">E-BIKE</a></li>
                 </ul>            
             </nav>
             <h1>{item.get('brand')}:{item.get('model')}</h1>
@@ -253,7 +253,7 @@ def PaginasIndividuales(items):
             </div>
         </body>
     </html>"""
-        escribirHTML(item.get('serial'), html_content)
+        escribirHTML( "PaginasIndividuales/" + item.get('serial'), html_content)
 
 
 if __name__ == "__main__":
