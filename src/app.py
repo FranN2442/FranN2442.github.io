@@ -1,4 +1,5 @@
 import pymongo
+from ApiMongoDB import ApiMongoDB
 
 myclient = pymongo.MongoClient("mongodb+srv://Fran:20Fran04.@bikecluster.fvhjzpv.mongodb.net/test")
 mydb = myclient["BikesRentalDB"]
@@ -36,6 +37,8 @@ def deleteBikes():
 
     mycol.delete_one(myquery)
 
+    ApiMongoDB()
+
 def insertBikes():
 
     _id = input("Introduzaca el numero de serie: ")
@@ -66,7 +69,7 @@ def insertBikes():
                 "material" : material, 
                 "brand" : marca, 
                 "group_sproket" : grupo_piñon,
-                "modelo" : modelo,
+                "model" : modelo,
                 "size" : talla,
                 "transmission" : transmision,
                 "weight" : peso,
@@ -81,11 +84,13 @@ def insertBikes():
 
     mycol.insert_one(myquery)
 
+    ApiMongoDB()
+
 def editBikes():
 
-    numero = input("Introduzca el numero de serie de la bici que desea editar: ")
+    numero = input("Introduzca el ID de la bici que desea editar: ")
 
-    print (mycol.find_one({"serial" : numero}))
+    print (mycol.find_one({"_id" : numero}))
 
     valor = input("Que caracteristica desea editar? ")
 
@@ -102,6 +107,8 @@ def editBikes():
         newvalues = {"$set" :{valor : cambio}}
     
         mycol.update_one(myquery, newvalues)
+
+        ApiMongoDB()
 
         print ("El cambio ha sido realizado correctamente!")
 
