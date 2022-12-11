@@ -31,7 +31,7 @@ def PaginaCategorias(items):
             <nav>
                 <ul id="lista">
                     <li><a href="PaginaCategorias.html">HOME</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="PaginaContacto.html">CONTACT</a></li>
                     <li><a href="PaginaMTB.html">MTB</a></li>
                     <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                     <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
@@ -90,7 +90,7 @@ def PaginaPrincipalMTB(items):
                     <nav>
                         <ul id="lista">
                             <li><a href="PaginaCategorias.html">HOME</a></li>
-                            <li><a href="">CONTACT</a></li>
+                            <li><a href="PaginaContacto.html">CONTACT</a></li>
                             <li><a href="PaginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                             <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
@@ -131,7 +131,7 @@ def PaginaPrincipalCarretera(items):
                     <nav>
                         <ul id="lista">
                             <li><a href="PaginaCategorias.html">HOME</a></li>
-                            <li><a href="">CONTACT</a></li>
+                            <li><a href="PaginaContacto.html">CONTACT</a></li>
                             <li><a href="PaginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                             <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
@@ -175,7 +175,7 @@ def PaginaPrincipalEbike(items):
                     <nav>
                         <ul id="lista">
                             <li><a href="PaginaCategorias.html">HOME</a></li>
-                            <li><a href="">CONTACT</a></li>
+                            <li><a href="PaginaContacto.html">CONTACT</a></li>
                             <li><a href="PaginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                             <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
@@ -220,7 +220,7 @@ def PaginasIndividuales(items):
             <nav>
                 <ul id="lista">
                     <li><a href="../PaginaCategorias.html">HOME</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="../PaginaContacto.html">CONTACT</a></li>
                     <li><a href="../PaginaMTB.html">MTB</a></li>
                     <li><a href="../PaginaCarretera.html">CARRETERA</a></li>
                     <li><a href="../PaginaE-Bike.html">E-BIKE</a></li>
