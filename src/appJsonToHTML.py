@@ -227,7 +227,7 @@ def PaginasIndividuales(items):
                 </ul>            
             </nav>
             <div class="bicicleta">
-                <h1>{item.get('brand')}:{item.get('model')}</h1>
+                <h1 class="title">{item.get('brand')}:{item.get('model')}</h1>
             </div>
             <div id="contenedor">
                 <div id="imagen">
@@ -257,6 +257,17 @@ def PaginasIndividuales(items):
                         </tbody>
                     </table>
                 </div>
+            </div>
+            <div class="contenedor2">
+                
+                <div>
+                    
+                    <h1>UN POCO MAS SOBRE LA BICICLETA</h1>        
+                </div>
+                <div id="txt">
+                    
+                    <p>fffffffffffffffffffffffffffffffff</p>   
+                </div>  
             </div>
         </body>
     </html>"""
