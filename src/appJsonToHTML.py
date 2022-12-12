@@ -8,6 +8,7 @@ def escribirHTML(nombre, contenido):
         print("HTML file created successfully")
 
 
+
 def cargarDatos(ruta='DataBase/bicisCarretera.json'):
     with open(ruta) as contenido:
         jsondoc = json.load(contenido)
