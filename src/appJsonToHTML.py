@@ -325,7 +325,7 @@ def PaginaOrbea(items):
             pass
         
 def PaginaBH(items):
-    """
+    html_content="""
         <!DOCTYPE html>
 
         <html>
@@ -345,7 +345,19 @@ def PaginaBH(items):
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
                     </ul>            
                 </nav>"""
-                
+    for item in items:
+        if item.get('brand') == 'BH':
+            html_content += """
+                <a id="link" href="PaginasIndividuales/{serial}.html">
+                    <div class="box"> 
+                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <p id="divText">{brand} : {model}</p>
+                    </div>
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+            brand=item.get('brand')
+            escribirHTML(brand, html_content)                
+        else:
+            pass
     
 
 
@@ -363,4 +375,7 @@ if __name__ == "__main__":
 
     PaginasIndividuales(items)
 
-    PaginaMarcas(items)
+    PaginaOrbea(items)
+    
+    PaginaBH(items)
+    
