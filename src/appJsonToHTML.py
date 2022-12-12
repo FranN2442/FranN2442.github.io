@@ -31,7 +31,7 @@ def PaginaCategorias(items):
             <nav>
                 <ul id="lista">
                     <li><a href="PaginaCategorias.html">HOME</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="PaginaContacto.html">CONTACT</a></li>
                     <li><a href="PaginaMTB.html">MTB</a></li>
                     <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                     <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
@@ -90,7 +90,7 @@ def PaginaPrincipalMTB(items):
                     <nav>
                         <ul id="lista">
                             <li><a href="PaginaCategorias.html">HOME</a></li>
-                            <li><a href="">CONTACT</a></li>
+                            <li><a href="PaginaContacto.html">CONTACT</a></li>
                             <li><a href="PaginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                             <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
@@ -131,7 +131,7 @@ def PaginaPrincipalCarretera(items):
                     <nav>
                         <ul id="lista">
                             <li><a href="PaginaCategorias.html">HOME</a></li>
-                            <li><a href="">CONTACT</a></li>
+                            <li><a href="PaginaContacto.html">CONTACT</a></li>
                             <li><a href="PaginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                             <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
@@ -175,7 +175,7 @@ def PaginaPrincipalEbike(items):
                     <nav>
                         <ul id="lista">
                             <li><a href="PaginaCategorias.html">HOME</a></li>
-                            <li><a href="">CONTACT</a></li>
+                            <li><a href="PaginaContacto.html">CONTACT</a></li>
                             <li><a href="PaginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                             <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
@@ -185,7 +185,7 @@ def PaginaPrincipalEbike(items):
                     """
 
     for item in items:
-        if item.get('type') == 'EBIKE':
+        if item.get('type') == 'E-Bike':
 
             html_content += """
                 <a id="link" href="PaginasIndividuales/{serial}.html">
@@ -214,32 +214,38 @@ def PaginasIndividuales(items):
             <title>TODO supply a title</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="../css/Individuales.css" type="text/css"/>
+            <link rel="stylesheet" href="../../css/PaginaIndividual.css" type="text/css"/>
         </head>
         <body>
             <nav>
                 <ul id="lista">
                     <li><a href="../PaginaCategorias.html">HOME</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="../PaginaContacto.html">CONTACT</a></li>
                     <li><a href="../PaginaMTB.html">MTB</a></li>
                     <li><a href="../PaginaCarretera.html">CARRETERA</a></li>
                     <li><a href="../PaginaE-Bike.html">E-BIKE</a></li>
                 </ul>            
             </nav>
-            <h1>{item.get('brand')}:{item.get('model')}</h1>
-
+            <div class="bicicleta">
+                <h1 class="title">{item.get('brand')}:{item.get('model')}</h1>
+            </div>
             <div id="contenedor">
                 <div id="imagen">
                     <img src="https://labicicleta.net/media/catalog/product/cache/1/small_image/295x/602f0fa2c1f0d1ba5e241f914e856ff9/t/r/trek_marlin_8_2022_rojo_.png" alt="Descripción de la imagen">
                 </div>
-            </div>"""
-        for k, v in item.items():
-            html_content += """
                 <div id="tabla">
-                    <table class="default">
+                    <table>
                             <colgroup>
                                 <col span="1" style="background-color: #79b8db">
-                            </colgroup>"""
+                            </colgroup>
+                        <thead>  
+                            <tr>
+                            
+                                <th>Caracteristicas</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>"""
         for k, v in item.items():
             html_content += """
                         <tr>
@@ -248,8 +254,20 @@ def PaginasIndividuales(items):
                         </tr>
                         """ % (k, v)
         html_content += """
+                        </tbody>
                     </table>
                 </div>
+            </div>
+            <div class="contenedor2">
+                
+                <div>
+                    
+                    <h1>UN POCO MAS SOBRE LA BICICLETA</h1>        
+                </div>
+                <div id="txt">
+                    
+                    <p>fffffffffffffffffffffffffffffffff</p>   
+                </div>  
             </div>
         </body>
     </html>"""
