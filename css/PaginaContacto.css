@@ -1,4 +1,4 @@
-body {
+#contenedor {
     padding-top: 20px !important;
     padding-bottom: 100px !important;
     float: none !important;
@@ -14,8 +14,7 @@ body {
     text-align: left !important;
 }
 
-nav {
-
+nav {  
     height: 50px;
     border: solid black 5px;
     justify-content: center;
@@ -46,7 +45,7 @@ nav {
     flex-direction: row;
     margin:5%;
     padding: 10px;
-    width: 100%;
+    width: 80%;
     height: 80%;
 }
 #mapa {
