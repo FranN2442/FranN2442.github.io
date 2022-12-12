@@ -276,7 +276,9 @@ def PaginasIndividuales(items):
             </div>
         </body>
     </html>"""
+
         escribirHTML("PaginasIndividuales/" + item.get('serial'), html_content)
+    return True
 
 
 def PaginaMarcas(items):
