@@ -1,5 +1,5 @@
 import json
-
+import os
 
 def escribirHTML(nombre, contenido):
 
@@ -14,6 +14,10 @@ def cargarDatos(ruta='DataBase/bicisCarretera.json'):
         jsondoc = json.load(contenido)
         mainkey = jsondoc.get('documents')
         return mainkey
+
+def CheckWrite():
+    os.path.exists("../html/PaginaCategorias.html")
+print("Existe")
 
 
 def PaginaCategorias(items):
@@ -272,7 +276,43 @@ def PaginasIndividuales(items):
             </div>
         </body>
     </html>"""
-        escribirHTML( "PaginasIndividuales/" + item.get('serial'), html_content)
+        escribirHTML("PaginasIndividuales/" + item.get('serial'), html_content)
+
+
+def PaginaMarcas(items):
+    html_content = """
+        <!DOCTYPE html>
+
+        <html>
+            <head>
+                <title>TODO supply a title</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="css\Individuales.css" type="text/css"/>
+            </head>
+            <body>
+                <nav>
+                    <ul id="lista">
+                        <li><a href="PaginaCategorias.html">HOME</a></li>
+                        <li><a href="PaginaContacto.html">CONTACT</a></li>
+                        <li><a href="PaginaMTB.html">MTB</a></li>
+                        <li><a href="PaginaCarretera.html">CARRETERA</a></li>
+                        <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                    </ul>            
+                </nav>"""
+    for item in items:
+        if item.get('brand') == 'ORBEA':
+            html_content += """
+                <a id="link" href="PaginasIndividuales/{serial}.html">
+                    <div class="box"> 
+                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <p id="divText">{brand} : {model}</p>
+                    </div>
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+            brand=item.get('brand')
+            escribirHTML(brand, html_content)                
+        else:
+            pass
 
 
 if __name__ == "__main__":
@@ -288,3 +328,5 @@ if __name__ == "__main__":
     PaginaPrincipalEbike(items)
 
     PaginasIndividuales(items)
+
+    PaginaMarcas(items)
