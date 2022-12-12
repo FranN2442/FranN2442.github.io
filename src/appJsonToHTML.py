@@ -260,7 +260,7 @@ def PaginasIndividuales(items):
         escribirHTML("PaginasIndividuales/" + item.get('serial'), html_content)
 
 
-def PaginaMarcas(items):
+def PaginaOrbea(items):
     html_content = """
         <!DOCTYPE html>
 
@@ -294,6 +294,30 @@ def PaginaMarcas(items):
             escribirHTML(brand, html_content)                
         else:
             pass
+        
+def PaginaBH(items):
+    """
+        <!DOCTYPE html>
+
+        <html>
+            <head>
+                <title>TODO supply a title</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="css\Individuales.css" type="text/css"/>
+            </head>
+            <body>
+                <nav>
+                    <ul id="lista">
+                        <li><a href="PaginaCategorias.html">HOME</a></li>
+                        <li><a href="PaginaContacto.html">CONTACT</a></li>
+                        <li><a href="PaginaMTB.html">MTB</a></li>
+                        <li><a href="PaginaCarretera.html">CARRETERA</a></li>
+                        <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                    </ul>            
+                </nav>"""
+                
+    
 
 
 if __name__ == "__main__":
