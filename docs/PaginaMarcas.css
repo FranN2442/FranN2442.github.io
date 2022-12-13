@@ -1,4 +1,8 @@
-body,html{margin:0;padding:0;height:50%;}
+body,html {
+  margin: 0;
+  padding: 0;
+  height: 50%;
+}
 
 html {
   background-color: #BADCFF;
@@ -6,7 +10,6 @@ html {
   background-attachment: fixed;
   background-size: cover;
 }
-
 nav {
   height: 65px;
   width: 100%;
@@ -59,39 +62,42 @@ display: block;
   height: 100%;
 }
 
-.img{
-    
+.img {
+
   margin: 0px;
   width: 215px;
   height: 210px;
-  border-radius: 5px    
+  border-radius: 5px
 }
-#divText{
-    
-    font-family: Verdana;
-    font-family: 'PT Sans';
-    
-    
+
+#divText {
+
+  font-family: Verdana;
+  font-family: 'PT Sans'
+
 }
-#link{
+
+#link {
 
   color: black;
   text-decoration: none;
   margin: 30px;
-  
-  
+
+
 
 }
-#contenedor{
+
+#contenedor {
 
   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: center;
-  
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 80px;
+  justify-content: center;
+
 }
-.box{
+
+.box {
 
   border: 0px solid;
   padding: 10px;
