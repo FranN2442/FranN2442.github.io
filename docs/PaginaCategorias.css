@@ -16,7 +16,7 @@ body,html{margin:0;padding:0;height:50%;}
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../imagenes/fondo.jpeg);
+    background: url(fondo.jpeg);
     background-size: cover;
   
   
@@ -31,7 +31,7 @@ body,html{margin:0;padding:0;height:50%;}
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../imagenes/fondo2.jpg);
+    background: url(fondo2.jpg);
     background-size: cover;
   
   }
@@ -45,7 +45,7 @@ body,html{margin:0;padding:0;height:50%;}
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../imagenes/fondo3.jpg);
+    background-image: url(fondo3.jpg);
     background-size: cover;
   }
   video.fillWidth {
