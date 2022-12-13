@@ -1,10 +1,157 @@
 @media only screen and (min-width:723px),(min-height= 902px) {
 
+  body,html{margin:0;padding:0;height:50%;}
+  #contenedor{
+
+  display: block;
   
 
 
   }
+  .mtb 
+  {
+    top: 0%;
+    left: 0%;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imagenes/fondo.jpeg);
+    background-size: cover;
+  
+  
+  }
+  .carretera 
+  {
+    top: 0%;
+    left: 0%;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imagenes/fondo2.jpg);
+    background-size: cover;
+  
+  }
+  .e-bike 
+  {
+    top: 0%;
+    left: 0%;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagenes/fondo3.jpg);
+    background-size: cover;
+  }
+  video.fillWidth {
+    width: 100%;
+    opacity: 100;
+  }
+  p{
+    
+    font-size: 1rem;
+    color: wheat;
+    font-family: Verdana;
+    font-family: 'PT Sans';
+    margin: 0px;
+  }
+  h2{
+    
+    font-size: 2rem;
+    color: wheat;
+    font-family: Verdana;
+    font-family: 'PT Sans';
+  }
+  .wrap{
+      
+    text-align: center;
+    padding: 1rem 2rem;
+    border: 3px solid wheat;
+    backdrop-filter: blur(10px);
+    width: 300px;
+    height: 110px;
+    border-radius: 5px
+        
+    
+  }
+  a{
 
+    text-decoration: none
+  }
+  header{
+
+    height: 450px;
+    background: url(../imagenes/carretera.gif);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  #presentacion{
+
+    color: wheat;
+    font-size: 75px;
+    text-align: center;
+  }
+  nav {
+    height: 65px;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid black 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    text-decoration: none;
+    z-index: 100;
+}
+#lista{
+    list-style: none;
+    display: flex;
+
+}
+#lista > li > a {
+
+    display: block;
+	padding: 25px 25px;
+	color: black;
+	text-decoration: none;
+}
+
+#lista li:hover {
+    background-color: #BADCFF;
+    border-radius: 8px
+}
+#lista li ul {
+    position: absolute;
+	display: none;
+	background-color:white;
+	list-style: none;
+	border-bottom: 2px solid white;
+	border-radius: 8px;
+}
+#lista li ul li a {
+    text-decoration: none;
+	padding: 10px 10px;
+	color: black;
+	display: block;
+}
+#lista li:hover > ul {
+    display: block;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    height: 100%;
+}
+}
 @media only screen and (max-width:722px),(max-height= 901px) {
 
   body,html{margin:0;padding:0;height:50%;}
