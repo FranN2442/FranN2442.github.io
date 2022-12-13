@@ -65,7 +65,7 @@ def PaginaCategorias(items):
                     <div class="mtb">
                         <div class="wrap">
                             <h2 class="header2">MOUNTAIN BIKE</h2>
-                             <p class="PAR">For adrenalone lovers</p>
+                             <p class="PAR">For adrenaline lovers</p>
                         </div>
                     </div>
                 </a>
@@ -73,7 +73,7 @@ def PaginaCategorias(items):
                     <div class="carretera">
                         <div class="wrap">
                             <h2 class="header2">CARRETERA</h2>
-                             <p class="PAR">for true racers</p>
+                             <p class="PAR">For true racers</p>
                         </div>
                     </div>
                 </a>
@@ -81,7 +81,7 @@ def PaginaCategorias(items):
                     <div class="e-bike">
                         <div class="wrap">
                             <h2 class="header2">E-BIKE</h2>
-                             <p class="PAR">for electric help</p>
+                             <p class="PAR">For electric help</p>
                         </div>
                     </div>
                 </a>
@@ -94,7 +94,7 @@ def PaginaCategorias(items):
 
 
 def PaginaPrincipalMTB(items):
-    html_content = f"""
+    html_content = """
             <!DOCTYPE html>
             <html>
                 <head>
@@ -147,7 +147,7 @@ def PaginaPrincipalMTB(items):
 
 
 def PaginaPrincipalCarretera(items):
-    html_content = f"""
+    html_content = """
             <!DOCTYPE html>
             <html>
                 <head>
@@ -202,7 +202,7 @@ def PaginaPrincipalCarretera(items):
 
 
 def PaginaPrincipalEbike(items):
-    html_content = f"""
+    html_content = """
             <!DOCTYPE html>
             <html>
                 <head>
@@ -258,7 +258,7 @@ def PaginaPrincipalEbike(items):
 
 def PaginasIndividuales(items):
     for item in items:
-        html_content = f"""
+        html_content = """
         <!DOCTYPE html>
 
         <html class="pag_ind">
@@ -354,7 +354,7 @@ def PaginasIndividuales(items):
         escribirHTML(item.get('serial'), html_content)
 
 def PaginaOrbea(items):
-    html_content = f"""
+    html_content = """
             <!DOCTYPE html>
             <html>
                 <head>
@@ -409,7 +409,7 @@ def PaginaOrbea(items):
 
 
 def PaginaBH(items):
-    html_content = f"""
+    html_content = """
             <!DOCTYPE html>
             <html>
                 <head>
@@ -465,7 +465,7 @@ def PaginaBH(items):
 
 
 def PaginaKTM(items):
-    html_content = f"""
+    html_content = """
             <!DOCTYPE html>
             <html>
                 <head>
@@ -519,7 +519,7 @@ def PaginaKTM(items):
     return escribirHTML("PaginaKTM", html_content)
         
 def PaginaSpecialized(items):
-    html_content = f"""
+    html_content = """
             <!DOCTYPE html>
             <html>
                 <head>
@@ -573,7 +573,7 @@ def PaginaSpecialized(items):
     return escribirHTML("PaginaSpecialized", html_content)
 
 def PaginaCanyon(items):
-    html_content = f"""
+    html_content = """
             <!DOCTYPE html>
             <html>
                 <head>
@@ -629,7 +629,7 @@ def PaginaCanyon(items):
         
         
 def PaginaMondraker(items):
-    html_content = f"""
+    html_content = """
             <!DOCTYPE html>
             <html>
                 <head>
@@ -683,7 +683,7 @@ def PaginaMondraker(items):
     return escribirHTML("PaginaMondraker", html_content)
 
 def PaginaCannondale(items):
-    html_content = f"""
+    html_content = """
             <!DOCTYPE html>
             <html>
                 <head>
