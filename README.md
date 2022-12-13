@@ -1,4 +1,4 @@
-![Alt text](https://smashinglogo.com/en/preview?s=esc1r2tpg-hdzqgpskl.jpg)
+![Alt text](imagenes/icono.png)
 
 **Contenido del Proyecto**
 
