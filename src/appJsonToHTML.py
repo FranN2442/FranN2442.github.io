@@ -65,7 +65,7 @@ def PaginaCategorias(items):
                     <div class="mtb">
                         <div class="wrap">
                             <h2 class="header2">MOUNTAIN BIKE</h2>
-                             <p class="PAR">NALINE</p>
+                             <p class="PAR">For adrenalone lovers</p>
                         </div>
                     </div>
                 </a>
@@ -73,7 +73,7 @@ def PaginaCategorias(items):
                     <div class="carretera">
                         <div class="wrap">
                             <h2 class="header2">CARRETERA</h2>
-                             <p class="PAR">DSDSD</p>
+                             <p class="PAR">for true racers</p>
                         </div>
                     </div>
                 </a>
@@ -81,7 +81,7 @@ def PaginaCategorias(items):
                     <div class="e-bike">
                         <div class="wrap">
                             <h2 class="header2">E-BIKE</h2>
-                             <p class="PAR">HELP</p>
+                             <p class="PAR">for electric help</p>
                         </div>
                     </div>
                 </a>
