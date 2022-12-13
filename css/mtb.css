@@ -6,7 +6,58 @@ html {
   background-attachment: fixed;
   background-size: cover;
 }
+nav {
+  height: 65px;
+  width: 100%;
+  background-color: white;
+  border-bottom: solid black 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  text-decoration: none;
+  z-index: 100;
+}
+#lista{
+  list-style: none;
+  display: flex;
 
+}
+
+#lista > li > a {
+
+  display: block;
+padding: 25px 25px;
+color: black;
+text-decoration: none;
+}
+
+#lista li:hover {
+  background-color: #BADCFF;
+  border-radius: 8px
+}
+#lista li ul {
+  position: absolute;
+display: none;
+background-color:white;
+list-style: none;
+border-bottom: 2px solid white;
+border-radius: 8px;
+}
+#lista li ul li a {
+  text-decoration: none;
+padding: 10px 10px;
+color: black;
+display: block;
+}
+#lista li:hover > ul {
+  display: block;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  height: 100%;
+}
 .img{
     
   margin: 0px;
@@ -53,29 +104,39 @@ html {
 
 
 }
-nav{
-  background-color: white;  
-  height: 50px;
-  border: solid black 5px;
-  justify-content: center;
-  display: flex;
-  text-decoration: none;
+
+.button {
+  background-color: white;
+  border:none;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
-#lista li{
-  
-  display:inline;
-  padding: 5px;
-  margin: 10px
+
+.dropdown-content {
+display: none;
+width: 100%;
+overflow: auto;
+box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
 }
-#lista a{
-  
-  text-decoration: none;
-  color: black
-  
+.dropdown:hover .dropdown-content {
+display:block;
+width: fit-content;
+flex-direction: column;
+background-color: white;
+
 }
-#lista li:hover{
-  
-  border: 3px black solid;
-  border-radius: 5px
-  
+.dropdown-content a {
+display: block;
+color: #000000;
+padding: 5px;
+text-decoration: none;
+}
+.dropdown-content a:hover {
+  border: 1px black;
+  border-radius: 5px;
+  color: white;
+  background-color: #BADCFF;
 }
