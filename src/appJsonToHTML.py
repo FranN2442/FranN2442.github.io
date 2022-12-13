@@ -39,17 +39,17 @@ def PaginaCategorias(items):
         <title>Rent Bike Mallorca</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/PaginaCategorias.css" type="text/css"/>
+        <link rel="stylesheet" href="css/PaginaCategorias.css" type="text/css"/>
         </head>
     <body>
         <section>
             <nav>
                 <ul id="lista">
                     <li><a href="../index.html">HOME</a></li>
-                    <li><a href="PaginaContacto.html">CONTACT</a></li>
-                    <li><a href="PaginaMTB.html">MTB</a></li>
-                    <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                    <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                    <li><a href="docs/PaginaContacto.html">CONTACT</a></li>
+                    <li><a href="docs/PaginaMTB.html">MTB</a></li>
+                    <li><a href="docs/PaginaCarretera.html">CARRETERA</a></li>
+                    <li><a href="docs/PaginaE-Bike.html">E-BIKE</a></li>
                 </ul>
             </nav>
             <header>
@@ -58,7 +58,7 @@ def PaginaCategorias(items):
                 </div>
             </header>
             <div id="contenedor">
-                <a href="PaginaMTB.html">
+                <a href="docs/PaginaMTB.html">
                     <div class="mtb">
                         <div class="wrap">
                             <h2>MOUNTAIN BIKE</h2>
@@ -66,7 +66,7 @@ def PaginaCategorias(items):
                         </div>
                     </div>
                 </a>
-                <a href="PaginaCarretera.html">
+                <a href="docs/PaginaCarretera.html">
                     <div class="carretera">
                         <div class="wrap">
                             <h2>CARRETERA</h2>
@@ -74,7 +74,7 @@ def PaginaCategorias(items):
                         </div>
                     </div>
                 </a>
-                <a href="PaginaE-Bike.html">
+                <a href="docs/PaginaE-Bike.html">
                     <div class="e-bike">
                         <div class="wrap">
                             <h2>E-BIKE</h2>
