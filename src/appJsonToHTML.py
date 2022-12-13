@@ -134,10 +134,10 @@ def PaginaPrincipalMTB(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" href="{imagen}">
                          <p class="PAR">{brand}: {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'),imagen=item.get('imagen'))
     html_content += """
                     </section>
                 </body>
@@ -187,10 +187,10 @@ def PaginaPrincipalCarretera(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0%22%3E">
+                        <img href="{imagen}" alt="Descripcion de la imagen">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'),imagen=item.get('imagen'))
         else:
             pass
     html_content += """
@@ -242,10 +242,10 @@ def PaginaPrincipalEbike(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img href="{imagen}" alt="Descripcion de la imagen">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'),imagen=item.get('imagen'))
         else:
             pass
     html_content += """
@@ -292,7 +292,7 @@ def PaginasIndividuales(items):
             <h1 class="title"> {item.get('brand')}:{item.get('model')}</h1>
             <section id="contenedor">
                 <div id="imagen">
-                    <img src="{item.get('imagen')}" alt="Descripcion de la imagen">
+                    <img href="{item.get('imagen')}" alt="Descripcion de la imagen">
                 </div>
                 <div id="tabla">
                     <table>
@@ -394,7 +394,7 @@ def PaginaOrbea(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" href="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
                 </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
@@ -449,10 +449,10 @@ def PaginaBH(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" href="{imagen}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'),imagen=item.get('imagen'))
         else:
             pass
     html_content += """
@@ -505,7 +505,7 @@ def PaginaKTM(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" href="{imagen}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
                 </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
@@ -559,10 +559,10 @@ def PaginaSpecialized(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" href="{imagen}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'),imagen=item.get('imagen'))
         else:
             pass
     html_content += """
@@ -613,10 +613,10 @@ def PaginaCanyon(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" href="{imagen}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'),imagen=item.get('imagen'))
         else:
             pass
     html_content += """
@@ -669,10 +669,10 @@ def PaginaMondraker(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" href="{imagen}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'),imagen=item.get('imagen'))
         else:
             pass
     html_content += """
@@ -723,10 +723,10 @@ def PaginaCannondale(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" href={imagen}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'),imagen=item.get('imagen'))
         else:
             pass
     html_content += """
