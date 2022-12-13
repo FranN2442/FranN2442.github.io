@@ -1,14 +1,7 @@
-@media only screen and (min-width:723px),(min-height= 902px) {
-
+body,html{margin:0;padding:0;height:50%;}
   
-
-
-  }
-
-@media only screen and (max-width:722px),(max-height= 901px) {
-
-  body,html{margin:0;padding:0;height:50%;}
-  #contenedor{
+/* Pagina Categorias*/
+#contenedor{
 
   display: block;
   
@@ -23,9 +16,9 @@
     width: 100%;
     overflow: hidden;
     display: flex;
-    background: url(../imagenes/fondo.jpeg);
     align-items: center;
     justify-content: center;
+    background: url(../imagenes/fondo.jpeg);
     background-size: cover;
   
   
@@ -61,40 +54,7 @@
     width: 100%;
     opacity: 100;
   }
-  p{
-    
-    font-size: 15px;
-    color: wheat;
-    font-family: Verdana;
-    font-family: 'PT Sans';
-    margin: 5px;
-  }
-  h2{
-    
-    font-size: 30px;
-    color: wheat;
-    font-family: Verdana;
-    font-family: 'PT Sans';
-    margin-bottom: 5px ;
-    margin-top: 8px;
-  }
-  .wrap{
-      
-    text-align: center;
-    padding: 1rem 2rem;
-    border: 3px solid wheat;
-    backdrop-filter: blur(10px);
-    width: 200px;
-    height: 100px;
-    border-radius: 5px
-        
-    
-  }
-  a{
-
-    text-decoration: none
-  }
-  header{
+  .paginaCat{
 
     height: 450px;
     background: url(../imagenes/carretera.gif);
@@ -106,29 +66,64 @@
   #presentacion{
 
     color: wheat;
-    font-size: 40px;
+    font-size: 75px;
     text-align: center;
   
 
   }
-  nav{
+  p{
     
+    font-size: 1rem;
+    color: wheat;
+    font-family: Verdana;
+    font-family: 'PT Sans';
+    margin: 0px;
+  }
+  h2{
+    
+    font-size: 2rem;
+    color: wheat;
+    font-family: Verdana;
+    font-family: 'PT Sans';
+  }
+  .wrap{
+      
+    text-align: center;
+    padding: 1rem 2rem;
+    border: 3px solid wheat;
+    backdrop-filter: blur(10px);
+    width: 300px;
+    height: 110px;
+    border-radius: 5px
+        
+    
+  }
+  a{
+
+    text-decoration: none
+
+  }
+  /* Todos los nav */
+
+  nav{
+    background-color: white; 
     height: 50px;
     border: solid black 5px;
     justify-content: center;
+    display: flex;
     text-decoration: none;
   }
   #lista li{
   
     display:inline;
-    padding: 2px;
-    margin: 2px
+    padding: 5px;
+    margin: 10px
   }
   #lista a{
   
     text-decoration: none;
-    color: black;
-    font-size: 13px  
+    color: black
+  
   }
   #lista li:hover{
   
@@ -136,4 +131,3 @@
     border-radius: 5px
   
   }
-}

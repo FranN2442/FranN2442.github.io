@@ -31,7 +31,7 @@ def PaginaCategorias(items):
         <title>Rent Bike Mallorca</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/PaginaCategorias.css" type="text/css"/>
+        <link rel="stylesheet" href="css/uno.css" type="text/css"/>
         </head>
     <body>
         <section>
@@ -44,7 +44,7 @@ def PaginaCategorias(items):
                     <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
                 </ul>
             </nav>
-            <header>
+            <header class="paginaCat">
                 <div id="presentacion">
                     <h1>Bienvenidos a<br>Bike Rental</h1>
                 </div>
@@ -54,7 +54,7 @@ def PaginaCategorias(items):
                     <div class="mtb">
                         <div class="wrap">
                             <h2>MOUNTAIN BIKE</h2>
-                            <p>LOVE TO ADRENALINE</p>
+                            <p class="p_cat">LOVE TO ADRENALINE</p>
                         </div>
                     </div>
                 </a>
@@ -62,7 +62,7 @@ def PaginaCategorias(items):
                     <div class="carretera">
                         <div class="wrap">
                             <h2>CARRETERA</h2>
-                            <p>LOVE TO RIDE</p>
+                            <p class="p_cat">LOVE TO RIDE</p>
                         </div>
                     </div>
                 </a>
@@ -70,7 +70,7 @@ def PaginaCategorias(items):
                     <div class="e-bike">
                         <div class="wrap">
                             <h2>E-BIKE</h2>
-                            <p>RIDE WITH E-HELP</p>
+                            <p class="p_cat">RIDE WITH E-HELP</p>
                         </div>
                     </div>
                 </a>
@@ -301,9 +301,9 @@ def PaginaOrbea(items):
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
                     </ul>
                 </nav>
-                <div id=contenedor>"""
+                <div class="contenedorMarca">"""
     for item in items:
-        if item.get('brand') == 'ORBEA':
+        if item.get('brand') == 'Orbea':
             html_content += """
                     <a id="link" href="{serial}.html">
                         <div class="box">
@@ -311,12 +311,15 @@ def PaginaOrbea(items):
                             <p id="divText">{brand} : {model}</p>
                         </div>
                     </a>
-                """.format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+            html_content += """
             
+            </body>
+        </html>"""
+            brand = item.get('brand')
+            escribirHTML(brand, html_content)
         else:
             pass
-        brand = item.get('brand')
-        return escribirHTML(brand, html_content)
 
 def PaginaBH(items):
     html_content = """
@@ -339,7 +342,7 @@ def PaginaBH(items):
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
                     </ul>
                 </nav>
-                <div id=contenedor>"""
+                <div class="contenedorMarca">"""
     for item in items:
         if item.get('brand') == 'BH':
             html_content += """
@@ -350,8 +353,12 @@ def PaginaBH(items):
                         </div>
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+            html_content += """
+            
+            </body>
+        </html>"""
             brand = item.get('brand')
-            return escribirHTML(brand, html_content)
+            escribirHTML(brand, html_content)
         else:
             pass
 
@@ -377,19 +384,23 @@ def PaginaKTM(items):
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
                     </ul>
                 </nav>
-                <div id=contenedor>"""
+                <div class="contenedorMarca">"""
     for item in items:
         if item.get('brand') == 'KTM':
             html_content += """
                     <a id="link" href="{serial}.html">
-                        <div class="box"> 
+                        <div class="box">
                             <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
                             <p id="divText">{brand} : {model}</p>
                         </div>
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
-            brand=item.get('brand')
-            return escribirHTML(brand, html_content)                
+            html_content += """
+            
+            </body>
+        </html>"""
+            brand = item.get('brand')
+            escribirHTML(brand, html_content)
         else:
             pass
 
@@ -414,19 +425,23 @@ def PaginaSpecialized(items):
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
                     </ul>
                 </nav>
-                <div id=contenedor>"""
+                <div class="contenedorMarca">"""
     for item in items:
-        if item.get('brand') == 'specialized':
+        if item.get('brand') == 'Specialized':
             html_content += """
                     <a id="link" href="{serial}.html">
-                        <div class="box"> 
+                        <div class="box">
                             <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
                             <p id="divText">{brand} : {model}</p>
                         </div>
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
-            brand=item.get('brand')
-            return escribirHTML(brand, html_content)                
+            html_content += """
+            
+            </body>
+        </html>"""
+            brand = item.get('brand')
+            escribirHTML(brand, html_content)
         else:
             pass
 
@@ -451,19 +466,22 @@ def PaginaCanyon(items):
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
                     </ul>
                 </nav>
-                <div id=contenedor>"""
+                <div class="contenedorMarca">"""
     for item in items:
         if item.get('brand') == 'Canyon':
             html_content += """
                     <a id="link" href="{serial}.html">
-                        <div class="box"> 
+                        <div class="box">
                             <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
                             <p id="divText">{brand} : {model}</p>
                         </div>
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
-            brand=item.get('brand')
-            return escribirHTML(brand, html_content)                
+            html_content += """
+            </body>
+        </html>"""
+            brand = item.get('brand')
+            escribirHTML(brand, html_content)
         else:
             pass
 
@@ -488,19 +506,63 @@ def PaginaMondraker(items):
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
                     </ul>
                 </nav>
-                <div id=contenedor>"""
+                <div class="contenedorMarca">"""
     for item in items:
         if item.get('brand') == 'Mondraker':
             html_content += """
                     <a id="link" href="{serial}.html">
-                        <div class="box"> 
+                        <div class="box">
                             <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
                             <p id="divText">{brand} : {model}</p>
                         </div>
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
-            brand=item.get('brand')
-            return escribirHTML(brand, html_content)                
+            html_content += """
+                </body>
+            </html>"""
+            brand = item.get('brand')
+            escribirHTML(brand, html_content)
+        else:
+            pass
+
+def PaginaCannondale(items):
+    html_content = """
+        <!DOCTYPE html>
+
+        <html>
+            <head>
+                <title>TODO supply a title</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="../css/PaginaMarcas.css" type="text/css"/>
+            </head>
+            <body>
+                <nav>
+                    <ul id="lista">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="PaginaContacto.html">CONTACT</a></li>
+                        <li><a href="PaginaMTB.html">MTB</a></li>
+                        <li><a href="PaginaCarretera.html">CARRETERA</a></li>
+                        <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                    </ul>
+                </nav>
+                <div class="contenedorMarca">"""
+    for item in items:
+        if item.get('brand') == 'Cannondale':
+            html_content += """
+                    <a id="link" href="{serial}.html">
+                        <div class="box">
+                            <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                            <p id="divText">{brand} : {model}</p>
+                        </div>
+                    </a>
+                </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+            html_content += """
+            
+            </body>
+        </html>"""
+            brand = item.get('brand')
+            escribirHTML(brand, html_content)
         else:
             pass
     
