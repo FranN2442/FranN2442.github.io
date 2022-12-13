@@ -1,6 +1,4 @@
-@media only screen and (min-width:723px),(min-height= 902px) {
-
-  body,html{margin:0;padding:0;height:50%;}
+body,html{margin:0;padding:0;height:50%;}
   #contenedor{
 
   display: block;
@@ -18,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../imagenes/fondo.jpeg);
+    background: url(fondo.jpeg);
     background-size: cover;
   
   
@@ -33,7 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../imagenes/fondo2.jpg);
+    background: url(fondo2.jpg);
     background-size: cover;
   
   }
@@ -47,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../imagenes/fondo3.jpg);
+    background-image: url(fondo3.jpg);
     background-size: cover;
   }
   video.fillWidth {
@@ -56,7 +54,7 @@
   }
   p{
     
-    font-size: 1rem;
+    font-size: 1.70rem;
     color: wheat;
     font-family: Verdana;
     font-family: 'PT Sans';
@@ -88,7 +86,7 @@
   header{
 
     height: 450px;
-    background: url(../imagenes/carretera.gif);
+    background: url(carretera.gif);
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -151,18 +149,17 @@
     display: flex;
     height: 100%;
 }
-}
-@media only screen and (max-width:722px),(max-height= 901px) {
 
-  body,html{margin:0;padding:0;height:50%;}
-  #contenedor{
+
+body,html{margin:0;padding:0;height:50%;}
+#contenedor{
 
   display: block;
   
 
 
   }
-  .mtb 
+.mtb 
   {
     top: 0%;
     left: 0%;
@@ -170,14 +167,14 @@
     width: 100%;
     overflow: hidden;
     display: flex;
-    background: url(../imagenes/fondo.jpeg);
+    background: url(fondo.jpeg);
     align-items: center;
     justify-content: center;
     background-size: cover;
   
   
   }
-  .carretera 
+.carretera 
   {
     top: 0%;
     left: 0%;
@@ -187,11 +184,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../imagenes/fondo2.jpg);
+    background: url(fondo2.jpg);
     background-size: cover;
   
   }
-  .e-bike 
+.e-bike 
   {
     top: 0%;
     left: 0%;
@@ -201,14 +198,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../imagenes/fondo3.jpg);
+    background-image: url(fondo3.jpg);
     background-size: cover;
   }
   video.fillWidth {
     width: 100%;
     opacity: 100;
   }
-  p{
+p{
     
     font-size: 15px;
     color: wheat;
@@ -216,7 +213,7 @@
     font-family: 'PT Sans';
     margin: 5px;
   }
-  h2{
+h2{
     
     font-size: 30px;
     color: wheat;
@@ -225,7 +222,7 @@
     margin-bottom: 5px ;
     margin-top: 8px;
   }
-  .wrap{
+.wrap{
       
     text-align: center;
     padding: 1rem 2rem;
@@ -237,11 +234,11 @@
         
     
   }
-  a{
+a{
 
     text-decoration: none
   }
-  header{
+header{
 
     height: 450px;
     background: url(../imagenes/carretera.gif);
@@ -250,7 +247,7 @@
     justify-content: center;
     display: flex;
   }
-  #presentacion{
+#presentacion{
 
     color: wheat;
     font-size: 40px;
@@ -258,29 +255,28 @@
   
 
   }
-  nav{
+nav{
     
     height: 50px;
     border: solid black 5px;
     justify-content: center;
     text-decoration: none;
   }
-  #lista li{
+#lista li{
   
     display:inline;
     padding: 2px;
     margin: 2px
   }
-  #lista a{
+#lista a{
   
     text-decoration: none;
     color: black;
     font-size: 13px  
   }
-  #lista li:hover{
+#lista li:hover{
   
     border: 3px black solid;
     border-radius: 5px
   
   }
-}
