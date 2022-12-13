@@ -63,4 +63,9 @@ la importancia de cada tarea a realizar.
 # Clockfiy
 ## Diagrama de tiempo
 # Mejoras
+Las mejoras que podriamos tener la aplicacion crud con una interfaz grafica implementando diferentes librerias.
+Otro aspecto que mejorar, es la distribucion de el codigo, o haber desarollado mejor las funciones, estar mas ordenado.
+En el aspecto HTML/CSS poco a poco ha ido mejorando todo, pero se podria pulir.
 # Dificultades
+Hemos visto, que las dificultades han ido disminuyendo a medida que ibamos aprendiendo mas sobre como usar los diccionarios, los bucles, el IF , difrentes libreris...etc
+Lo mas complicado que nos a esultado ha sido hacer los casos test, al principio teniamos claro que casos test ibamos a tener, y luego a la hora de desemboluparlo con el codigo ya nos costaba mas, por lo que optamos por crear codigo y en base de eso crear los casos test.
