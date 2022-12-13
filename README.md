@@ -1,4 +1,4 @@
-![Alt text](imagenes/icono.png)
+![Alt text](https://github.com/FranN2442/Proyecto_BicicletasDAW/blob/main/imagenes/logo.png)
 
 **Contenido del Proyecto**
 
