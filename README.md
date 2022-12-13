@@ -52,6 +52,12 @@ donde tambien se genera unos html a partir de la informaccion que se extrae en l
 ## Diagrama de componentes
 ![Alt text](https://github.com/FranN2442/Proyecto_BicicletasDAW/blob/main/imagenes/COMP.png)
 # Metodologia
+La metodologia que hemos implementado es la *Metodologia Scrum*, es una metodologia que consiste en llevar
+a cabo un conjunto de tareas de forma regular con el objetivo de trabajar de manera colaborativa.
+Para llevarla a cabo, hemos usado el apartado de Projects de GitHub, donde nos proporciona una tabla donde 
+podemos asignar las tareas que va a realizar cada uno, y con objetivo que se van a realizar.
+El trabajo se a dividido en diferentes sprints donde en cada uno gracias al Product Owner hemos podido valorar
+la importancia de cada tarea a realizar.
 # Pruebas
 # Clockfiy
 ## Diagrama de tiempo
