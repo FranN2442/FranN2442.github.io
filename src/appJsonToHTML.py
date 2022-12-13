@@ -125,7 +125,7 @@ def PaginaPrincipalMTB(items):
                             </li>
                         </ul>
                     </nav>
-                    <div id="contenedor">
+                    <section id="contenedor">
                     """
 
     for item in items:
@@ -139,6 +139,7 @@ def PaginaPrincipalMTB(items):
                     </div>
                 </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
     html_content += """
+                    </section>
                 </body>
             </html>"""
 
@@ -177,7 +178,7 @@ def PaginaPrincipalCarretera(items):
                             </li>
                         </ul>
                     </nav>
-                    <div id="contenedor">
+                    <section id="contenedor">
                     """
 
     for item in items:
@@ -193,7 +194,7 @@ def PaginaPrincipalCarretera(items):
         else:
             pass
     html_content += """
-                </div>
+                </section>
             </body>
         </html>"""
 
@@ -232,7 +233,7 @@ def PaginaPrincipalEbike(items):
                             </li>
                         </ul>
                     </nav>
-                    <div id="contenedor">
+                    <section id="contenedor">
                     """
 
     for item in items:
@@ -248,7 +249,7 @@ def PaginaPrincipalEbike(items):
         else:
             pass
     html_content += """
-                </div>
+                </section>
             </body>
         </html>"""
 
@@ -289,7 +290,7 @@ def PaginasIndividuales(items):
         </nav>
         <body>
             <h1 class="title"> {item.get('brand')}:{item.get('model')}</h1>
-            <div id="contenedor">
+            <section id="contenedor">
                 <div id="imagen">
                     <img src="{item.get('imagen')}" alt="Descripcion de la imagen">
                 </div>
@@ -318,8 +319,8 @@ def PaginasIndividuales(items):
                         </tbody>
                     </table>
                 </div>
-            </div>
-            <div class="contenedor2">
+            </section>
+            <section class="contenedor2">
                 
                 <div>
                     
@@ -330,7 +331,7 @@ def PaginasIndividuales(items):
             html_content +="""    
                      <p class="PAR">Esta es la mejor bicicleta para la montaña, con {model}<br> podras ir por las zonas mas atrevidas de las montañas.<br> Ven y pruebala ya por {price_day} € al dia o {price_hour} € / hora. </p>   
                 </div>  
-            </div>
+            </section>
         </body>
     </html>""".format(model = item.get("model"), price_day = item.get("price day"), price_hour = item.get("price hour"))
         elif item.get("type") == "Carretera":
@@ -338,7 +339,7 @@ def PaginasIndividuales(items):
             html_content +="""    
                      <p class="PAR">Esta es la mejor bicicleta para carretera, con {model}<br> podras ir de ruta por donde quieras.<br> Ven y pruebala ya por {price_day} € al dia o {price_hour} € / hora. </p>   
                 </div>  
-            </div>
+            </section>
         </body>
     </html>""".format(model = item.get("model"), price_day = item.get("price day"), price_hour = item.get("price hour"))
 
@@ -346,7 +347,7 @@ def PaginasIndividuales(items):
             html_content +="""    
                      <p class="PAR">Esta es la mejor bicicleta correr sin esfuerzo, con {model}<br> podras ir por cuestas o rutas, que no te vas a cansar.<br> Ven y pruebala ya por {price_day} € al dia o {price_hour} € / hora. </p>   
                 </div>  
-            </div>
+            </section>
         </body>
     </html>""".format(model = item.get("model"), price_day = item.get("price day"), price_hour = item.get("price hour"))
 
@@ -384,7 +385,7 @@ def PaginaOrbea(items):
                             </li>
                         </ul>
                     </nav>
-                    <div id="contenedor">
+                    <section id="contenedor">
                     """
 
     for item in items:
@@ -400,7 +401,7 @@ def PaginaOrbea(items):
         else:
             pass
     html_content += """
-                </div>
+                </section>
             </body>
         </html>"""
 
@@ -439,7 +440,7 @@ def PaginaBH(items):
                             </li>
                         </ul>
                     </nav>
-                    <div id="contenedor">
+                    <section id="contenedor">
                     """
 
     for item in items:
@@ -455,7 +456,7 @@ def PaginaBH(items):
         else:
             pass
     html_content += """
-                </div>
+                </section>
             </body>
         </html>"""
 
@@ -495,7 +496,7 @@ def PaginaKTM(items):
                             </li>
                         </ul>
                     </nav>
-                    <div id="contenedor">
+                    <section id="contenedor">
                     """
 
     for item in items:
@@ -511,7 +512,7 @@ def PaginaKTM(items):
         else:
             pass
     html_content += """
-                </div>
+                </section>
             </body>
         </html>"""
 
@@ -549,7 +550,7 @@ def PaginaSpecialized(items):
                             </li>
                         </ul>
                     </nav>
-                    <div id="contenedor">
+                    <section id="contenedor">
                     """
 
     for item in items:
@@ -565,7 +566,7 @@ def PaginaSpecialized(items):
         else:
             pass
     html_content += """
-                </div>
+                </section>
             </body>
         </html>"""
 
@@ -603,7 +604,7 @@ def PaginaCanyon(items):
                             </li>
                         </ul>
                     </nav>
-                    <div id="contenedor">
+                    <section id="contenedor">
                     """
 
     for item in items:
@@ -619,7 +620,7 @@ def PaginaCanyon(items):
         else:
             pass
     html_content += """
-                </div>
+                </section>
             </body>
         </html>"""
 
@@ -659,7 +660,7 @@ def PaginaMondraker(items):
                             </li>
                         </ul>
                     </nav>
-                    <div id="contenedor">
+                    <section id="contenedor">
                     """
 
     for item in items:
@@ -675,7 +676,7 @@ def PaginaMondraker(items):
         else:
             pass
     html_content += """
-                </div>
+                </section>
             </body>
         </html>"""
 
@@ -713,7 +714,7 @@ def PaginaCannondale(items):
                             </li>
                         </ul>
                     </nav>
-                    <div id="contenedor">
+                    <section id="contenedor">
                     """
 
     for item in items:
@@ -729,7 +730,7 @@ def PaginaCannondale(items):
         else:
             pass
     html_content += """
-                </div>
+                </section>
             </body>
         </html>"""
 
@@ -751,26 +752,26 @@ def PaginaContactar():
 
 <body>
     <nav>
-                        <ul id="lista">
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
-                            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
-                            <li><a>MARCAS</a>
-                                <ul>
-                                    <li><a href="PaginaBH.html">BH</a></li>
-                            <li><a href="PaginaCannondale.html">Cannondale</a></li>
-                            <li><a href="PaginaCanyon.html">Canyon</a></li>
-                            <li><a href="PaginaKTM.html">KTM</a></li>
-                            <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                            <li><a href="PaginaOrbea.html">Orbea</a></li>
-                            <li><a href="PaginaSpecialized.html">Specialized</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-    <div id="contenedor">
+        <ul id="lista">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="PaginaContacto.html">CONTACT</a></li>
+            <li><a href="PaginaMTB.html">MTB</a></li>
+            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
+            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+            <li><a>MARCAS</a>
+                <ul>
+                    <li><a href="PaginaBH.html">BH</a></li>
+            <li><a href="PaginaCannondale.html">Cannondale</a></li>
+            <li><a href="PaginaCanyon.html">Canyon</a></li>
+            <li><a href="PaginaKTM.html">KTM</a></li>
+            <li><a href="PaginaMondraker.html">Mondraker</a></li>
+            <li><a href="PaginaOrbea.html">Orbea</a></li>
+            <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section id="contenedor">
         <div id="mapa">
             <h2>Dónde estamos?</h2>
             <p id="adress">Passeig Es Traves, 12, 07108 Port de Sóller, Illes Balears</p>
@@ -835,7 +836,7 @@ def PaginaContactar():
                 </p>
             </form>
         </div>
-    </div>
+    </section>
 </body>
     
     """
