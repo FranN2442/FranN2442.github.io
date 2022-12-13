@@ -18,7 +18,7 @@ def cargarDatos(ruta='DataBase/bicisCarretera.json'):
 
 
 def CheckWrite():
-    os.path.exists("../html/PaginaCategorias.html")
+    os.path.exists("html/PaginaCategorias.html")
 
 
 print("Existe")
@@ -44,6 +44,17 @@ def PaginaCategorias(items):
                     <li><a href="PaginaMTB.html">MTB</a></li>
                     <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                     <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                    <li><a>MARCAS</a>
+                        <ul>
+                            <li><a href="BH.html">BH</a></li>
+                            <li><a href="Cannondale.html">Cannondale</a></li>
+                            <li><a href="Canyon.html">Canyon</a></li>
+                            <li><a href="KTM.html">KTM</a></li>
+                            <li><a href="Mondraker.html">Mondraker</a></li>
+                            <li><a href="ORBEA.html">Orbea</a></li>
+                            <li><a href="specialized.html">Specialized</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <header>
@@ -97,14 +108,25 @@ def PaginaPrincipalMTB(items):
 
                 <body>
                     <nav>
-                        <ul id="lista">
-                            <li><a href="PaginaCategorias.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
-                            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                <ul id="lista">
+                    <li><a href="PaginaCategorias.html">HOME</a></li>
+                    <li><a href="PaginaContacto.html">CONTACT</a></li>
+                    <li><a href="PaginaMTB.html">MTB</a></li>
+                    <li><a href="PaginaCarretera.html">CARRETERA</a></li>
+                    <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                    <li><a>MARCAS</a>
+                        <ul>
+                            <li><a href="BH.html">BH</a></li>
+                            <li><a href="Cannondale.html">Cannondale</a></li>
+                            <li><a href="Canyon.html">Canyon</a></li>
+                            <li><a href="KTM.html">KTM</a></li>
+                            <li><a href="Mondraker.html">Mondraker</a></li>
+                            <li><a href="ORBEA.html">Orbea</a></li>
+                            <li><a href="specialized.html">Specialized</a></li>
                         </ul>
-                    </nav>
+                    </li>
+                </ul>
+            </nav>
                     <div id="contenedor">
                     """
 
@@ -144,6 +166,17 @@ def PaginaPrincipalCarretera(items):
                             <li><a href="PaginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                             <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a>MARCAS</a>
+                                <ul>
+                                    <li><a href="BH.html">BH</a></li>
+                                    <li><a href="Cannondale.html">Cannondale</a></li>
+                                    <li><a href="Canyon.html">Canyon</a></li>
+                                    <li><a href="KTM.html">KTM</a></li>
+                                    <li><a href="Mondraker.html">Mondraker</a></li>
+                                    <li><a href="ORBEA.html">Orbea</a></li>
+                                    <li><a href="specialized.html">Specialized</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <div id="contenedor">
@@ -188,6 +221,17 @@ def PaginaPrincipalEbike(items):
                             <li><a href="PaginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                             <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a>MARCAS</a>
+                                <ul>
+                                    <li><a href="BH.html">BH</a></li>
+                                    <li><a href="Cannondale.html">Cannondale</a></li>
+                                    <li><a href="Canyon.html">Canyon</a></li>
+                                    <li><a href="KTM.html">KTM</a></li>
+                                    <li><a href="Mondraker.html">Mondraker</a></li>
+                                    <li><a href="ORBEA.html">Orbea</a></li>
+                                    <li><a href="specialized.html">Specialized</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <div id="contenedor">
@@ -223,29 +267,30 @@ def PaginasIndividuales(items):
             <title>TODO supply a title</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-            <link rel="stylesheet" href="../css/Individuales.css" type="text/css"/>
-=======
-<<<<<<< HEAD
-            <link rel="stylesheet" href="../css/Individuales.css" type="text/css"/>
-=======
-            <link rel="stylesheet" href="../../css/PaginaIndividual.css" type="text/css"/>
->>>>>>> 30d3f057e6225fd50a0ca97181ea803520856b16
->>>>>>> adf6df645d68d9ffe311650fe9dc16a4b412af28
+            <link rel="stylesheet" href="../../css/Individuales.css" type="text/css"/>
         </head>
         <body>
             <nav>
                 <ul id="lista">
-                    <li><a href="../PaginaCategorias.html">HOME</a></li>
-                    <li><a href="../PaginaContacto.html">CONTACT</a></li>
-                    <li><a href="../PaginaMTB.html">MTB</a></li>
-                    <li><a href="../PaginaCarretera.html">CARRETERA</a></li>
-                    <li><a href="../PaginaE-Bike.html">E-BIKE</a></li>
+                    <li><a href="PaginaCategorias.html">HOME</a></li>
+                    <li><a href="PaginaContacto.html">CONTACT</a></li>
+                    <li><a href="PaginaMTB.html">MTB</a></li>
+                    <li><a href="PaginaCarretera.html">CARRETERA</a></li>
+                    <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                    <li><a>MARCAS</a>
+                        <ul>
+                            <li><a href="BH.html">BH</a></li>
+                            <li><a href="Cannondale.html">Cannondale</a></li>
+                            <li><a href="Canyon.html">Canyon</a></li>
+                            <li><a href="KTM.html">KTM</a></li>
+                            <li><a href="Mondraker.html">Mondraker</a></li>
+                            <li><a href="ORBEA.html">Orbea</a></li>
+                            <li><a href="specialized.html">Specialized</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
-            <div class="bicicleta">
-                <h1 class="title">{item.get('brand')}:{item.get('model')}</h1>
-            </div>
+            <h1 class="title"> {item.get('brand')}:{item.get('model')}</h1>
             <div id="contenedor">
                 <div id="imagen">
                     <img src="https://labicicleta.net/media/catalog/product/cache/1/small_image/295x/602f0fa2c1f0d1ba5e241f914e856ff9/t/r/trek_marlin_8_2022_rojo_.png" alt="Descripción de la imagen">
@@ -263,6 +308,7 @@ def PaginasIndividuales(items):
                             </tr>
                         </thead>
                         <tbody>"""
+                        
         for k, v in item.items():
             html_content += """
                         <tr>
@@ -302,7 +348,7 @@ def PaginaOrbea(items):
                 <title>TODO supply a title</title>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="../css/PaginaMarcas.css" type="text/css"/>
+                <link rel="stylesheet" href="../css/PaginaMarcas" type="text/css"/>
             </head>
             <body>
                 <nav>
@@ -312,6 +358,17 @@ def PaginaOrbea(items):
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                        <li><a>MARCAS</a>
+                            <ul>
+                                <li><a href="BH.html">BH</a></li>
+                                <li><a href="Cannondale.html">Cannondale</a></li>
+                                <li><a href="Canyon.html">Canyon</a></li>
+                                <li><a href="KTM.html">KTM</a></li>
+                                <li><a href="Mondraker.html">Mondraker</a></li>
+                                <li><a href="ORBEA.html">Orbea</a></li>
+                                <li><a href="specialized.html">Specialized</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div id=contenedor>"""
@@ -325,7 +382,10 @@ def PaginaOrbea(items):
                         </div>
                     </a>
                 """.format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
-            
+            html_content +="""
+                </div>
+            </body>
+        </html>"""
         else:
             pass
         brand = item.get('brand')
@@ -340,7 +400,7 @@ def PaginaBH(items):
                 <title>TODO supply a title</title>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="../css/PaginaMarcas.css" type="text/css"/>
+                <link rel="stylesheet" href="../css/PaginaMarcas" type="text/css"/>
             </head>
             <body>
                 <nav>
@@ -350,6 +410,17 @@ def PaginaBH(items):
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                        <li><a>MARCAS</a>
+                            <ul>
+                                <li><a href="BH.html">BH</a></li>
+                                <li><a href="Cannondale.html">Cannondale</a></li>
+                                <li><a href="Canyon.html">Canyon</a></li>
+                                <li><a href="KTM.html">KTM</a></li>
+                                <li><a href="Mondraker.html">Mondraker</a></li>
+                                <li><a href="ORBEA.html">Orbea</a></li>
+                                <li><a href="specialized.html">Specialized</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div id=contenedor>"""
@@ -363,6 +434,10 @@ def PaginaBH(items):
                         </div>
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+            html_content +="""
+                </div>
+            </body>
+        </html>"""
             brand = item.get('brand')
             escribirHTML(brand, html_content)
         else:
@@ -378,7 +453,7 @@ def PaginaKTM(items):
                 <title>TODO supply a title</title>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="../css/PaginaMarcas.css" type="text/css"/>
+                <link rel="stylesheet" href="../css/PaginaMarcas" type="text/css"/>
             </head>
             <body>
                 <nav>
@@ -388,6 +463,17 @@ def PaginaKTM(items):
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                        <li><a>MARCAS</a>
+                            <ul>
+                                <li><a href="BH.html">BH</a></li>
+                                <li><a href="Cannondale.html">Cannondale</a></li>
+                                <li><a href="Canyon.html">Canyon</a></li>
+                                <li><a href="KTM.html">KTM</a></li>
+                                <li><a href="Mondraker.html">Mondraker</a></li>
+                                <li><a href="ORBEA.html">Orbea</a></li>
+                                <li><a href="specialized.html">Specialized</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div id=contenedor>"""
@@ -401,6 +487,10 @@ def PaginaKTM(items):
                         </div>
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+            html_content +="""
+                </div>
+            </body>
+        </html>"""
             brand=item.get('brand')
             escribirHTML(brand, html_content)                
         else:
@@ -415,7 +505,7 @@ def PaginaSpecialized(items):
                 <title>TODO supply a title</title>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="../css/PaginaMarcas.css" type="text/css"/>
+                <link rel="stylesheet" href="../css/PaginaMarcas" type="text/css"/>
             </head>
             <body>
                 <nav>
@@ -425,6 +515,17 @@ def PaginaSpecialized(items):
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                        <li><a>MARCAS</a>
+                            <ul>
+                                <li><a href="BH.html">BH</a></li>
+                                <li><a href="Cannondale.html">Cannondale</a></li>
+                                <li><a href="Canyon.html">Canyon</a></li>
+                                <li><a href="KTM.html">KTM</a></li>
+                                <li><a href="Mondraker.html">Mondraker</a></li>
+                                <li><a href="ORBEA.html">Orbea</a></li>
+                                <li><a href="specialized.html">Specialized</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div id=contenedor>"""
@@ -438,6 +539,10 @@ def PaginaSpecialized(items):
                         </div>
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+            html_content +="""
+                </div>
+            </body>
+        </html>"""
             brand=item.get('brand')
             escribirHTML(brand, html_content)                
         else:
@@ -452,7 +557,7 @@ def PaginaCanyon(items):
                 <title>TODO supply a title</title>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="../css/PaginaMarcas.css" type="text/css"/>
+                <link rel="stylesheet" href="../css/PaginaMarcas" type="text/css"/>
             </head>
             <body>
                 <nav>
@@ -462,6 +567,17 @@ def PaginaCanyon(items):
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                        <li><a>MARCAS</a>
+                            <ul>
+                                <li><a href="BH.html">BH</a></li>
+                                <li><a href="Cannondale.html">Cannondale</a></li>
+                                <li><a href="Canyon.html">Canyon</a></li>
+                                <li><a href="KTM.html">KTM</a></li>
+                                <li><a href="Mondraker.html">Mondraker</a></li>
+                                <li><a href="ORBEA.html">Orbea</a></li>
+                                <li><a href="specialized.html">Specialized</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div id=contenedor>"""
@@ -475,6 +591,10 @@ def PaginaCanyon(items):
                         </div>
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+            html_content +="""
+                </div>
+            </body>
+        </html>"""
             brand=item.get('brand')
             escribirHTML(brand, html_content)                
         else:
@@ -489,7 +609,7 @@ def PaginaMondraker(items):
                 <title>TODO supply a title</title>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="../css/PaginaMarcas.css" type="text/css"/>
+                <link rel="stylesheet" href="../css/PaginaMarcas" type="text/css"/>
             </head>
             <body>
                 <nav>
@@ -499,6 +619,17 @@ def PaginaMondraker(items):
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
                         <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                        <li><a>MARCAS</a>
+                            <ul>
+                                <li><a href="BH.html">BH</a></li>
+                                <li><a href="Cannondale.html">Cannondale</a></li>
+                                <li><a href="Canyon.html">Canyon</a></li>
+                                <li><a href="KTM.html">KTM</a></li>
+                                <li><a href="Mondraker.html">Mondraker</a></li>
+                                <li><a href="ORBEA.html">Orbea</a></li>
+                                <li><a href="specialized.html">Specialized</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div id=contenedor>"""
@@ -510,8 +641,11 @@ def PaginaMondraker(items):
                             <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
                             <p id="divText">{brand} : {model}</p>
                         </div>
-                    </a>
-                </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                    </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+            html_content +="""
+                </div>
+            </body>
+        </html>"""
             brand=item.get('brand')
             escribirHTML(brand, html_content)                
         else:
