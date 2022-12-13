@@ -4,7 +4,7 @@ import os
 
 def escribirHTML(nombre, contenido):
 
-    with open("html/" + nombre + ".html", "w+") as html_file:
+    with open("docs/" + nombre + ".html", "w+") as html_file:
         html_file.write(contenido)
         print("HTML file created successfully")
 
@@ -18,7 +18,7 @@ def cargarDatos(ruta='DataBase/bicisCarretera.json'):
 
 
 def CheckWrite():
-    os.path.exists("../html/PaginaCategorias.html")
+    os.path.exists("../docs/PaginaCategorias.html")
 
 
 print("Existe")
@@ -81,7 +81,7 @@ def PaginaCategorias(items):
     </body>
 </html>"""
 
-    return escribirHTML("PaginaCategorias", html_content)
+    return escribirHTML("index", html_content)
 
 
 def PaginaPrincipalMTB(items):
