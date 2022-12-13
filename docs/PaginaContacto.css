@@ -89,7 +89,7 @@ html {
     position: relative;
     align-self: left;
     text-align: left;
-    margin: 10%;
+    margin: 5%;
     border-radius: 10px;
     padding: 20px;
     background-color: #fbfbfb;
@@ -101,7 +101,7 @@ html {
 #contacto{
     display: block;
     align-self:right;
-    margin: 10%;
+    margin: 5%;
     width: 460px;
     height: auto;
     border-radius: 10px;
