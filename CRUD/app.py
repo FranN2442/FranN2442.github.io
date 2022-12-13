@@ -1,10 +1,10 @@
 import pymongo
 from src.DB.ApiMongoDB import ApiMongoDB
 from src.appJsonToHTML import PaginasIndividuales, cargarDatos,PaginaBH,PaginaOrbea,PaginaPrincipalCarretera,PaginaPrincipalEbike,PaginaPrincipalMTB 
-
+import os
 items = cargarDatos()
 
-myclient = pymongo.MongoClient("mongodb+srv://Fran:20Fran04.@bikecluster.fvhjzpv.mongodb.net/test")
+myclient = pymongo.MongoClient(os.environ['API_url'])
 mydb = myclient["BikesRentalDB"]
 mycol = mydb["AllBikesCollection"]
 
