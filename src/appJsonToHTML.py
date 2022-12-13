@@ -8,6 +8,12 @@ def escribirHTML(nombre, contenido):
         html_file.write(contenido)
         print("HTML file created successfully")
 
+def escribirIndex(nombre, contenido):
+
+    with open(nombre + ".html", "w+") as html_file:
+        html_file.write(contenido)
+        print("HTML file created successfully")
+
 
 
 def cargarDatos(ruta='DataBase/bicisCarretera.json'):
@@ -18,7 +24,7 @@ def cargarDatos(ruta='DataBase/bicisCarretera.json'):
 
 
 def CheckWrite():
-    os.path.exists("../docs/PaginaCategorias.html")
+    os.path.exists("../index.html")
 
 
 print("Existe")
@@ -39,7 +45,7 @@ def PaginaCategorias(items):
         <section>
             <nav>
                 <ul id="lista">
-                    <li><a href="PaginaCategorias.html">HOME</a></li>
+                    <li><a href="../index.html">HOME</a></li>
                     <li><a href="PaginaContacto.html">CONTACT</a></li>
                     <li><a href="PaginaMTB.html">MTB</a></li>
                     <li><a href="PaginaCarretera.html">CARRETERA</a></li>
@@ -81,7 +87,7 @@ def PaginaCategorias(items):
     </body>
 </html>"""
 
-    return escribirHTML("index", html_content)
+    return escribirIndex("index", html_content)
 
 
 def PaginaPrincipalMTB(items):
@@ -98,7 +104,7 @@ def PaginaPrincipalMTB(items):
                 <body>
                     <nav>
                         <ul id="lista">
-                            <li><a href="PaginaCategorias.html">HOME</a></li>
+                            <li><a href="../index.html">HOME</a></li>
                             <li><a href="PaginaContacto.html">CONTACT</a></li>
                             <li><a href="PaginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
@@ -139,7 +145,7 @@ def PaginaPrincipalCarretera(items):
                 <body>
                     <nav>
                         <ul id="lista">
-                            <li><a href="PaginaCategorias.html">HOME</a></li>
+                            <li><a href="../index.html">HOME</a></li>
                             <li><a href="PaginaContacto.html">CONTACT</a></li>
                             <li><a href="PaginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
@@ -183,7 +189,7 @@ def PaginaPrincipalEbike(items):
                 <body>
                     <nav>
                         <ul id="lista">
-                            <li><a href="PaginaCategorias.html">HOME</a></li>
+                            <li><a href="../index.html">HOME</a></li>
                             <li><a href="PaginaContacto.html">CONTACT</a></li>
                             <li><a href="PaginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
@@ -228,7 +234,7 @@ def PaginasIndividuales(items):
         <body>
             <nav>
                 <ul id="lista">
-                    <li><a href="../PaginaCategorias.html">HOME</a></li>
+                    <li><a href="../../index.html">HOME</a></li>
                     <li><a href="../PaginaContacto.html">CONTACT</a></li>
                     <li><a href="../PaginaMTB.html">MTB</a></li>
                     <li><a href="../PaginaCarretera.html">CARRETERA</a></li>
@@ -296,7 +302,7 @@ def PaginaOrbea(items):
             <body>
                 <nav>
                     <ul id="lista">
-                        <li><a href="PaginaCategorias.html">HOME</a></li>
+                        <li><a href="../index.html">HOME</a></li>
                         <li><a href="PaginaContacto.html">CONTACT</a></li>
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
@@ -334,7 +340,7 @@ def PaginaBH(items):
             <body>
                 <nav>
                     <ul id="lista">
-                        <li><a href="PaginaCategorias.html">HOME</a></li>
+                        <li><a href="../index.html">HOME</a></li>
                         <li><a href="PaginaContacto.html">CONTACT</a></li>
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
@@ -372,7 +378,7 @@ def PaginaKTM(items):
             <body>
                 <nav>
                     <ul id="lista">
-                        <li><a href="PaginaCategorias.html">HOME</a></li>
+                        <li><a href="../index.html">HOME</a></li>
                         <li><a href="PaginaContacto.html">CONTACT</a></li>
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
@@ -409,7 +415,7 @@ def PaginaSpecialized(items):
             <body>
                 <nav>
                     <ul id="lista">
-                        <li><a href="PaginaCategorias.html">HOME</a></li>
+                        <li><a href="../index.html">HOME</a></li>
                         <li><a href="PaginaContacto.html">CONTACT</a></li>
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
@@ -446,7 +452,7 @@ def PaginaCanyon(items):
             <body>
                 <nav>
                     <ul id="lista">
-                        <li><a href="PaginaCategorias.html">HOME</a></li>
+                        <li><a href="../index.html">HOME</a></li>
                         <li><a href="PaginaContacto.html">CONTACT</a></li>
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
@@ -483,7 +489,7 @@ def PaginaMondraker(items):
             <body>
                 <nav>
                     <ul id="lista">
-                        <li><a href="PaginaCategorias.html">HOME</a></li>
+                        <li><a href="../index.html">HOME</a></li>
                         <li><a href="PaginaContacto.html">CONTACT</a></li>
                         <li><a href="PaginaMTB.html">MTB</a></li>
                         <li><a href="PaginaCarretera.html">CARRETERA</a></li>
