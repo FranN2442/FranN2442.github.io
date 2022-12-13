@@ -50,7 +50,7 @@ python3 src/app.py
 El uso de la aplicacion se basa en la facilitacion de la ediccion, insercion y eliminacion de documentos en una bae de datos,
 donde tambien se genera unos html a partir de la informaccion que se extrae en la base de datos en formato HTML.
 ## Diagrama de componentes
-![Alt text](https://github.com/FranN2442/Proyecto_BicicletasDAW/blob/main/imagenes/COMP.png)
+![Alt text](https://github.com/FranN2442/Proyecto_BicicletasDAW/blob/main/imagenes/DIAGRAMA.png)
 # Metodologia
 La metodologia que hemos implementado es la *Metodologia Scrum*, es una metodologia que consiste en llevar
 a cabo un conjunto de tareas de forma regular con el objetivo de trabajar de manera colaborativa.
