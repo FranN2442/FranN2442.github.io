@@ -1,4 +1,7 @@
 import pymongo
+from src.appJsonToHTML import cargarDatos
+from src.DB.ApiMongoDB import ApiMongoDB
+from src.appJsonToHTML import PaginaCanyon as CanyonHTML, PaginaBH as BhHTML, PaginaCategorias, PaginaKTM as KTMHtml, PaginaMondraker as MondrakerHTML , PaginaOrbea as ObreaHTML, PaginaPrincipalCarretera as CarreteraHTML , PaginaPrincipalEbike as EBikeHTML , PaginaPrincipalMTB as MTBhtml , PaginasIndividuales as IndiviHTML , PaginaSpecialized as SpezHTML
 
 myclient = pymongo.MongoClient("mongodb+srv://Fran:20Fran04.@bikecluster.fvhjzpv.mongodb.net/test")
 mydb = myclient["BikesRentalDB"]
@@ -6,13 +9,19 @@ mycol = mydb["AllBikesCollection"]
 
 
 def funciones():
-    print ("""
 
-Que deseas realizar?
-    -Editar
-    -Eliminar
-    -Insertar   
----------------------
+    ApiMongoDB()
+
+    items = cargarDatos()
+
+    print ("""
+  <............................>
+    Que deseas realizar?     |
+        -Editar              |
+        -Eliminar            |
+        -Insertar            |
+        -Ejecutar Programa   |
+  <---------------------------->
     """)
     funcion = input()
 
@@ -21,24 +30,36 @@ Que deseas realizar?
         editBikes()
     elif funcion == "Eliminar":
             deleteBikes()
-    else:
-        if funcion == "Insertar":
+    elif funcion == "Insertar":
             insertBikes()
+    elif funcion == "Ejecutar Programa":
+
+            try:    
+                BhHTML(items),CanyonHTML(items),
+                PaginaCategorias(items),SpezHTML(items),
+                MondrakerHTML(items),ObreaHTML(items),
+                EBikeHTML(items),IndiviHTML(items),
+                MTBhtml(items),CarreteraHTML(items)
+            except:
+                print ("Algo a sucedido en el programa!")
+
+                return exit
+
+
     
 def deleteBikes():
-    for x in mycol.find("model"):
-
-        print (x)
 
     valor = input("Que bicicleta quieres eliminar?")
 
-    myquery = {  "name" : valor }
+    myquery = {  "_id" : valor }
 
     mycol.delete_one(myquery)
 
+    ApiMongoDB()
+
 def insertBikes():
 
-    _id = input("Introduzaca el numero de serie: ")
+    _id = input("Introduzaca el ID: ")
     material = input("Material de la bicicleta: ")
     marca = input("Cual es la marca? ")
     grupo_piñon = input("Grupo del piñon? ")
@@ -81,17 +102,17 @@ def insertBikes():
 
     mycol.insert_one(myquery)
 
+    ApiMongoDB()
+
 def editBikes():
 
     numero = input("Introduzca el numero de serie de la bici que desea editar: ")
 
-    print (mycol.find_one({"serial" : numero}))
+    filtro = {"serial" : numero}
+
+    print (mycol.find_one(filtro))
 
     valor = input("Que caracteristica desea editar? ")
-
-    nombre = input("Cual es su actual valor? ")
-
-    myquery = {valor : nombre}
 
     cambio = input("Introduzca el cambio: ")
 
@@ -101,9 +122,11 @@ def editBikes():
     
         newvalues = {"$set" :{valor : cambio}}
     
-        mycol.update_one(myquery, newvalues)
+        mycol.update_one(filtro, newvalues)
 
         print ("El cambio ha sido realizado correctamente!")
+
+        ApiMongoDB()
 
     else:
 
@@ -116,6 +139,7 @@ def editBikes():
 if __name__ == '__main__':
 
    funciones()
+
 
 
 
