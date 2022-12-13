@@ -1,6 +1,6 @@
-@media (width:1920px) , (height:1080px)   {
+@media (width:1588px) , (height:852px)   {
     
-nav {
+    nav {
     height: 65px;
     width: 100%;
     background-color: white;
@@ -11,43 +11,44 @@ nav {
     position: fixed;
     text-decoration: none;
     z-index: 100;
-}
-#lista{
+    }
+    #lista{
     list-style: none;
     display: flex;
 
-}
-#lista > li > a {
+    }
+    #lista > li > a {
 
     display: block;
 	padding: 25px 25px;
 	color: black;
 	text-decoration: none;
-}
+    }
 
-#lista li:hover {
+    #lista li:hover {
     background-color: #BADCFF;
     border-radius: 8px
-}
-#lista li ul {
+    }
+    #lista li ul {
     position: absolute;
 	display: none;
 	background-color:white;
 	list-style: none;
 	border-bottom: 2px solid white;
 	border-radius: 8px;
-}
-#lista li ul li a {
+    }
+    #lista li ul li a {
     text-decoration: none;
 	padding: 10px 10px;
 	color: black;
-	display: block;
-}
-#lista li:hover > ul {
+    display: block;
+
+    }
+    #lista li:hover > ul {
     display: block;
     align-items: center;
-}
-.logo{
+    }
+    .logo{
     display: flex;
     height: 100%;
 }
@@ -62,7 +63,7 @@ nav {
 
 
 }
-.title {
+    .title {
 
     text-align: center;
     font-family: sans-serif;
@@ -71,7 +72,7 @@ nav {
 
 
 }
-#tabla{
+    #tabla{
     display: table;
     margin: 50px;
     margin-left: 200px;
@@ -81,7 +82,7 @@ nav {
     background-color: white
 
 }
-#contenedor{
+    #contenedor{
 
     justify-content: center;
     display: flex;
@@ -89,7 +90,7 @@ nav {
     border-bottom: solid #d6d6d6 2px;
 
 }
-img{
+    img{
 
     width: 650px;
     height: 650px;
@@ -97,21 +98,21 @@ img{
     box-shadow: 0 0 10px grey;
     border-radius: 10px;
 }
-#imagen {
+    #imagen {
 
     margin-top: 150px;
     height: 400px;
     margin-right: 100px;
  
 }
-td{
+    td{
 
     width: 50px;
     height: 50px;
     padding: 7px
 
 }
-.contenedor2{
+    .contenedor2{
 
     display: block;
     margin: 0px;
@@ -121,6 +122,7 @@ td{
 
 body{margin: 0px}
 }
+
 @media (width:390px) , (height:844){
     nav {
         height: 3%;
