@@ -267,27 +267,27 @@ def PaginasIndividuales(items):
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="Individuales.css" type="text/css"/>
         </head>
+        <nav>
+            <ul id="lista">
+                <li><a href="PaginaCategorias.html">HOME</a></li>
+                <li><a href="PaginaContacto.html">CONTACT</a></li>
+                <li><a href="PaginaMTB.html">MTB</a></li>
+                <li><a href="PaginaCarretera.html">CARRETERA</a></li>
+                <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                <li><a>MARCAS</a>
+                    <ul>
+                        <li><a href="PaginaBH.html">BH</a></li>
+                        <li><a href="PaginaCannondale.html">Cannondale</a></li>
+                        <li><a href="PaginaCanyon.html">Canyon</a></li>
+                        <li><a href="PaginaKTM.html">KTM</a></li>
+                        <li><a href="PaginaMondraker.html">Mondraker</a></li>
+                        <li><a href="PaginaOrbea.html">Orbea</a></li>
+                        <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         <body>
-            <nav>
-                <ul id="lista">
-                    <li><a href="PaginaCategorias.html">HOME</a></li>
-                    <li><a href="PaginaContacto.html">CONTACT</a></li>
-                    <li><a href="PaginaMTB.html">MTB</a></li>
-                    <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                    <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
-                    <li><a>MARCAS</a>
-                        <ul>
-                            <li><a href="PaginaBH.html">BH</a></li>
-                            <li><a href="PaginaCannondale.html">Cannondale</a></li>
-                            <li><a href="PaginaCanyon.html">Canyon</a></li>
-                            <li><a href="PaginaKTM.html">KTM</a></li>
-                            <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                            <li><a href="PaginaOrbea.html">Orbea</a></li>
-                            <li><a href="PaginaSpecialized.html">Specialized</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
             <h1 class="title"> {item.get('brand')}:{item.get('model')}</h1>
             <div id="contenedor">
                 <div id="imagen">
@@ -325,13 +325,31 @@ def PaginasIndividuales(items):
                     
                     <h1>UN POCO MAS SOBRE LA BICICLETA</h1>        
                 </div>
-                <div id="txt">
-                    
-                     <p class="PAR">fffffffffffffffffffff</p>   
+                <div id="txt">"""
+        if item.get("type") == "MTB":
+            html_content +="""    
+                     <p class="PAR">Esta es la mejor bicicleta para la montaña, con {model}<br> podras ir por las zonas mas atrevidas de las montañas.<br> Ven y pruebala ya por {price_day} € al dia o {price_hour} € / hora. </p>   
                 </div>  
             </div>
         </body>
-    </html>"""
+    </html>""".format(model = item.get("model"), price_day = item.get("price day"), price_hour = item.get("price hour"))
+        elif item.get("type") == "Carretera":
+
+            html_content +="""    
+                     <p class="PAR">Esta es la mejor bicicleta para carretera, con {model}<br> podras ir de ruta por donde quieras.<br> Ven y pruebala ya por {price_day} € al dia o {price_hour} € / hora. </p>   
+                </div>  
+            </div>
+        </body>
+    </html>""".format(model = item.get("model"), price_day = item.get("price day"), price_hour = item.get("price hour"))
+
+        elif item.get("type") == "E-Bike":
+            html_content +="""    
+                     <p class="PAR">Esta es la mejor bicicleta correr sin esfuerzo, con {model}<br> podras ir por cuestas o rutas, que no te vas a cansar.<br> Ven y pruebala ya por {price_day} € al dia o {price_hour} € / hora. </p>   
+                </div>  
+            </div>
+        </body>
+    </html>""".format(model = item.get("model"), price_day = item.get("price day"), price_hour = item.get("price hour"))
+
         escribirHTML(item.get('serial'), html_content)
 
 def PaginaOrbea(items):
