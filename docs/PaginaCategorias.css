@@ -86,7 +86,7 @@ body,html{margin:0;padding:0;height:50%;}
   header{
 
     height: 450px;
-    background: url(../imagenes/carretera.gif);
+    background: url(carretera.gif);
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -167,7 +167,7 @@ body,html{margin:0;padding:0;height:50%;}
     width: 100%;
     overflow: hidden;
     display: flex;
-    background: url(../imagenes/fondo.jpeg);
+    background: url(fondo.jpeg);
     align-items: center;
     justify-content: center;
     background-size: cover;
@@ -184,7 +184,7 @@ body,html{margin:0;padding:0;height:50%;}
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../imagenes/fondo2.jpg);
+    background: url(fondo2.jpg);
     background-size: cover;
   
   }
@@ -198,7 +198,7 @@ body,html{margin:0;padding:0;height:50%;}
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../imagenes/fondo3.jpg);
+    background-image: url(fondo3.jpg);
     background-size: cover;
   }
   video.fillWidth {
