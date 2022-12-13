@@ -1,105 +1,294 @@
-body,html{margin:0;padding:0;height:50%;}
-  #contenedor{
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 50%;
+}
+
+#contenedor {
 
   display: block;
-  
 
 
-  }
-  .mtb 
-  {
-    top: 0%;
-    left: 0%;
-    height: 400px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(../imagenes/fondo.jpeg);
-    background-size: cover;
-  
-  
-  }
-  .carretera 
-  {
-    top: 0%;
-    left: 0%;
-    height: 400px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(../imagenes/fondo2.jpg);
-    background-size: cover;
-  
-  }
-  .e-bike 
-  {
-    top: 0%;
-    left: 0%;
-    height: 400px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../imagenes/fondo3.jpg);
-    background-size: cover;
-  }
-  video.fillWidth {
-    width: 100%;
-    opacity: 100;
-  }
-  p{
-    
-    font-size: 1.70rem;
-    color: wheat;
-    font-family: Verdana;
-    font-family: 'PT Sans';
-    margin: 0px;
-  }
-  h2{
-    
-    font-size: 2rem;
-    color: wheat;
-    font-family: Verdana;
-    font-family: 'PT Sans';
-  }
-  .wrap{
-      
-    text-align: center;
-    padding: 1rem 2rem;
-    border: 3px solid wheat;
-    backdrop-filter: blur(10px);
-    width: 300px;
-    height: 110px;
-    border-radius: 5px
-        
-    
-  }
-  a{
 
-    text-decoration: none
-  }
-  header{
+}
 
-    height: 450px;
-    background: url(carretera.gif);
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-  #presentacion{
+.mtb {
+  top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(fondo.jpeg);
+  background-size: cover;
 
-    color: wheat;
-    font-size: 75px;
-    text-align: center;
-  }
+
+}
+
+.carretera {
+  top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(fondo2.jpg);
+  background-size: cover;
+
+}
+
+.e-bike {
+  top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(fondo3.jpg);
+  background-size: cover;
+}
+
+video.fillWidth {
+  width: 100%;
+  opacity: 100;
+}
+
+p {
+
+  font-size: 1.70rem;
+  color: wheat;
+  font-family: Verdana;
+  font-family: 'PT Sans';
+  margin: 0px;
+}
+
+h2 {
+
+  font-size: 2rem;
+  color: wheat;
+  font-family: Verdana;
+  font-family: 'PT Sans';
+}
+
+.wrap {
+
+  text-align: center;
+  padding: 1rem 2rem;
+  border: 3px solid wheat;
+  backdrop-filter: blur(10px);
+  width: 300px;
+  height: 110px;
+  border-radius: 5px
+}
+
+a {
+
+  text-decoration: none
+}
+
+header {
+
+  height: 450px;
+  background: url(carretera.gif);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#presentacion {
+
+  color: wheat;
+  font-size: 75px;
+  text-align: center;
+}
+
+nav {
+  height: 65px;
+  width: 100%;
+  background-color: white;
+  border-bottom: solid black 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  text-decoration: none;
+  z-index: 100;
+}
+
+#lista {
+  list-style: none;
+  display: flex;
+
+}
+
+#lista>li>a {
+
+  display: block;
+  padding: 25px 25px;
+  color: black;
+  text-decoration: none;
+}
+
+#lista li:hover {
+  background-color: #BADCFF;
+  border-radius: 8px
+}
+
+#lista li ul {
+  position: absolute;
+  display: none;
+  background-color: white;
+  list-style: none;
+  border-bottom: 2px solid white;
+  border-radius: 8px;
+}
+
+#lista li ul li a {
+  text-decoration: none;
+  padding: 10px 10px;
+  color: black;
+  display: block;
+}
+
+#lista li:hover>ul {
+  display: block;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  height: 100%;
+}
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 50%;
+}
+
+#contenedor {
+
+  display: block;
+
+
+
+}
+
+.mtb {
+  top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  background: url(fondo.jpeg);
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+
+
+}
+
+.carretera {
+  top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(fondo2.jpg);
+  background-size: cover;
+
+}
+
+.e-bike {
+  top: 0%;
+  left: 0%;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(fondo3.jpg);
+  background-size: cover;
+}
+
+video.fillWidth {
+  width: 100%;
+  opacity: 100;
+}
+
+p {
+
+  font-size: 15px;
+  color: wheat;
+  font-family: Verdana;
+  font-family: 'PT Sans';
+  margin: 5px;
+}
+
+h2 {
+
+  font-size: 30px;
+  color: wheat;
+  font-family: Verdana;
+  font-family: 'PT Sans';
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+
+.wrap {
+
+  text-align: center;
+  padding: 1rem 2rem;
+  border: 3px solid wheat;
+  backdrop-filter: blur(10px);
+  width: 200px;
+  height: 100px;
+  border-radius: 5px
+}
+
+a {
+
+  text-decoration: none
+}
+
+header {
+
+  height: 450px;
+  background: url(../imagenes/carretera.gif);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#presentacion {
+
+  color: wheat;
+  font-size: 40px;
+  text-align: center;
+
+
+}
+
+@media (width:390px),
+(height:844px) {
   nav {
-    height: 65px;
+    height: 45px;
     width: 100%;
     background-color: white;
     border-bottom: solid black 5px;
@@ -109,174 +298,53 @@ body,html{margin:0;padding:0;height:50%;}
     position: fixed;
     text-decoration: none;
     z-index: 100;
-}
-#lista{
+  }
+  #lista>li>a {
+
+    display: block;
+    max-block-size: 15px;
+    padding: 5px 5px;
+    color: black;
+    text-decoration: none;
+  }
+
+  #lista {
     list-style: none;
     display: flex;
+    max-block-size: 15px;
+    font-size: 12.5px;
+  }
 
-}
-#lista > li > a {
-
-    display: block;
-	padding: 25px 25px;
-	color: black;
-	text-decoration: none;
-}
-
-#lista li:hover {
+  #lista li:active {
     background-color: #BADCFF;
-    border-radius: 8px
-}
-#lista li ul {
+    border-radius: 4px
+  }
+
+  #lista li ul {
     position: absolute;
-	display: none;
-	background-color:white;
-	list-style: none;
-	border-bottom: 2px solid white;
-	border-radius: 8px;
-}
-#lista li ul li a {
+    display: none;
+    background-color: white;
+    list-style: none;
+    border-bottom: 2px solid white;
+    border-radius: 4px;
+  }
+
+  #lista li ul li a {
     text-decoration: none;
-	padding: 10px 10px;
-	color: black;
-	display: block;
-}
-#lista li:hover > ul {
+    padding: 2px;
+    color: black;
+    display: block;
+  }
+
+  #lista li:active>ul {
     display: block;
     align-items: center;
+  }
+  ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
-.logo{
-    display: flex;
-    height: 100%;
 }
-
-
-body,html{margin:0;padding:0;height:50%;}
-#contenedor{
-
-  display: block;
-  
-
-
-  }
-.mtb 
-  {
-    top: 0%;
-    left: 0%;
-    height: 400px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    background: url(fondo.jpeg);
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-  
-  
-  }
-.carretera 
-  {
-    top: 0%;
-    left: 0%;
-    height: 400px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(fondo2.jpg);
-    background-size: cover;
-  
-  }
-.e-bike 
-  {
-    top: 0%;
-    left: 0%;
-    height: 400px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(fondo3.jpg);
-    background-size: cover;
-  }
-  video.fillWidth {
-    width: 100%;
-    opacity: 100;
-  }
-p{
-    
-    font-size: 15px;
-    color: wheat;
-    font-family: Verdana;
-    font-family: 'PT Sans';
-    margin: 5px;
-  }
-h2{
-    
-    font-size: 30px;
-    color: wheat;
-    font-family: Verdana;
-    font-family: 'PT Sans';
-    margin-bottom: 5px ;
-    margin-top: 8px;
-  }
-.wrap{
-      
-    text-align: center;
-    padding: 1rem 2rem;
-    border: 3px solid wheat;
-    backdrop-filter: blur(10px);
-    width: 200px;
-    height: 100px;
-    border-radius: 5px
-        
-    
-  }
-a{
-
-    text-decoration: none
-  }
-header{
-
-    height: 450px;
-    background: url(../imagenes/carretera.gif);
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-#presentacion{
-
-    color: wheat;
-    font-size: 40px;
-    text-align: center;
-  
-
-  }
-nav{
-    
-    height: 50px;
-    border: solid black 5px;
-    justify-content: center;
-    text-decoration: none;
-  }
-#lista li{
-  
-    display:inline;
-    padding: 2px;
-    margin: 2px
-  }
-#lista a{
-  
-    text-decoration: none;
-    color: black;
-    font-size: 13px  
-  }
-#lista li:hover{
-  
-    border: 3px black solid;
-    border-radius: 5px
-  
-  }
