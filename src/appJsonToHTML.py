@@ -31,7 +31,7 @@ def PaginaCategorias(items):
         <title>Rent Bike Mallorca</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/PaginaCategorias.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/PaginaCategorias.css" type="text/css"/>
         </head>
     <body>
         <section>
@@ -61,7 +61,7 @@ def PaginaCategorias(items):
                 </div>
             </header>
             <div id="contenedor">
-                <a href="docs/PaginaMTB.html">
+                <a href="PaginaMTB.html">
                     <div class="mtb">
                         <div class="wrap">
                             <h2>MOUNTAIN BIKE</h2>
@@ -273,7 +273,7 @@ def PaginasIndividuales(items):
             <title>TODO supply a title</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="../css/PaginaIndividual.css" type="text/css"/>
+            <link rel="stylesheet" href="../css/Individuales.css" type="text/css"/>
         </head>
         <body>
             <nav>
@@ -392,7 +392,7 @@ def PaginaOrbea(items):
         else:
             pass
         brand = item.get('brand')
-        return escribirHTML(brand, html_content)
+        escribirHTML(brand, html_content)
 
 def PaginaBH(items):
     html_content = """
@@ -441,10 +441,10 @@ def PaginaBH(items):
                 </div>
             </body>
         </html>"""
-            brand = item.get('brand')
-            return escribirHTML(brand, html_content)
         else:
             pass
+        brand = item.get('brand')
+        escribirHTML(brand, html_content)
 
 
 def PaginaKTM(items):
@@ -494,11 +494,10 @@ def PaginaKTM(items):
                 </div>
             </body>
         </html>"""
-            brand=item.get('brand')
-            return escribirHTML(brand, html_content)                
         else:
             pass
-
+        brand = item.get('brand')
+        escribirHTML(brand, html_content)
 def PaginaSpecialized(items):
     html_content = """
         <!DOCTYPE html>
@@ -546,10 +545,10 @@ def PaginaSpecialized(items):
                 </div>
             </body>
         </html>"""
-            brand=item.get('brand')
-            return escribirHTML(brand, html_content)                
         else:
             pass
+        brand = item.get('brand')
+        escribirHTML(brand, html_content)
 
 def PaginaCanyon(items):
     html_content = """
@@ -599,7 +598,7 @@ def PaginaCanyon(items):
             </body>
         </html>"""
             brand=item.get('brand')
-            return escribirHTML(brand, html_content)                
+            escribirHTML(brand, html_content)                
         else:
             pass
 
@@ -636,8 +635,8 @@ def PaginaMondraker(items):
                     </ul>
                 </nav>
                 <div id=contenedor>"""
-    for item in items:
-        if item.get('brand') == 'Mondraker':
+    if brand == 'Mondraker':
+        for brand in items:
             html_content += """
                     <a id="link" href="{serial}.html">
                         <div class="box"> 
@@ -650,7 +649,7 @@ def PaginaMondraker(items):
             </body>
         </html>"""
             brand=item.get('brand')
-            return escribirHTML(brand, html_content)                
+            escribirHTML(brand, html_content)                
         else:
             pass
     

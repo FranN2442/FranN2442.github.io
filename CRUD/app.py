@@ -1,7 +1,9 @@
 import pymongo
+import os
 from src.appJsonToHTML import cargarDatos
 from src.DB.ApiMongoDB import ApiMongoDB
 from src.appJsonToHTML import PaginaCanyon as CanyonHTML, PaginaBH as BhHTML, PaginaCategorias, PaginaKTM as KTMHtml, PaginaMondraker as MondrakerHTML , PaginaOrbea as ObreaHTML, PaginaPrincipalCarretera as CarreteraHTML , PaginaPrincipalEbike as EBikeHTML , PaginaPrincipalMTB as MTBhtml , PaginasIndividuales as IndiviHTML , PaginaSpecialized as SpezHTML
+
 
 myclient = pymongo.MongoClient("mongodb+srv://Fran:20Fran04.@bikecluster.fvhjzpv.mongodb.net/test")
 mydb = myclient["BikesRentalDB"]
