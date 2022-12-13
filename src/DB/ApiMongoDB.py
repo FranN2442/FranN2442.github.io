@@ -20,12 +20,15 @@ def ApiMongoDB():
   try:
     bicisCarretera = requests.post(url, headers=headers, data=payload)
     bicisCarretera = bicisCarretera.text
-    bicisCarretera = json.loads(bicisCarretera)
+    apiToJson = open("DataBase/bicisCarretera.json", "w", encoding="UTF-8")
+    apiToJson.write(bicisCarretera)     
+    print ( "El documento ha sido creado correctamente" )
   except requests.exceptions.ConnectTimeout:
     print ("Timeout Error")
     SystemExit()
   else:
     print ("Conexion realizada con exito!")
     return bicisCarretera
+
 
   

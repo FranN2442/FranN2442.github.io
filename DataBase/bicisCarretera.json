@@ -13,7 +13,7 @@
             "price_hour": "7",
             "location": "Palma",
             "availible": "yes",
-            "serial": "234341321e",
+            "serial": "134341321e",
             "type": "CARRETERA"
         },
         {
@@ -170,7 +170,7 @@
             "price_day": "49",
             "price_hour": "15",
             "availible": "yes",
-            "location": "soller",
+            "location": "Sineu",
             "serial": "456987906i",
             "fork": "ORBEA carbon fork 2021, aluminum steerer, 1-1/8 head tube",
             "imagen": "https://cdn1.biciescapa.com/10539-large_default/bicicleta-ORBEA-orca-m30-28458.jpg.webp"
@@ -251,24 +251,6 @@
             "availible": "yes",
             "location": "Palma",
             "serial": "564987486y",
-            "fork": " Rockshox SID SL Base RL 29, 100mm, Charger, Debonair",
-            "imagen": "https://cdn1.biciescapa.com/33193-large_default/bicicleta-mondraker-chrono-r-50900.jpg.webp"
-        },
-        {
-            "_id": "0017",
-            "model": "ORBEA Rise H30",
-            "brand": "ORBEA",
-            "material": "Aluminio",
-            "group_set": "Shimano SLX M7100 SGS Shadow Plus",
-            "type": "E-Bike",
-            "battery": "540",
-            "engine_brand": "Shimano EP8-RS",
-            "weight": "38",
-            "price_day": "75",
-            "price_hour": "21",
-            "availible": "yes",
-            "location": "Palma",
-            "serial": "565632306h",
             "fork": " Rockshox SID SL Base RL 29, 100mm, Charger, Debonair",
             "imagen": "https://cdn1.biciescapa.com/33193-large_default/bicicleta-mondraker-chrono-r-50900.jpg.webp"
         }

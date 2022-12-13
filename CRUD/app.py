@@ -1,4 +1,8 @@
 import pymongo
+from src.DB.ApiMongoDB import ApiMongoDB
+from src.appJsonToHTML import PaginasIndividuales, cargarDatos,PaginaBH,PaginaOrbea,PaginaPrincipalCarretera,PaginaPrincipalEbike,PaginaPrincipalMTB 
+
+items = cargarDatos()
 
 myclient = pymongo.MongoClient("mongodb+srv://Fran:20Fran04.@bikecluster.fvhjzpv.mongodb.net/test")
 mydb = myclient["BikesRentalDB"]
@@ -21,24 +25,29 @@ Que deseas realizar?
         editBikes()
     elif funcion == "Eliminar":
             deleteBikes()
-    else:
-        if funcion == "Insertar":
+    elif funcion == "Insertar":
             insertBikes()
+
+        
     
 def deleteBikes():
-    for x in mycol.find("model"):
+    valor = input("ID de la bicicleta?")
 
-        print (x)
-
-    valor = input("Que bicicleta quieres eliminar?")
-
-    myquery = {  "name" : valor }
-
+    myquery = {  "_id" : valor }
+    
     mycol.delete_one(myquery)
+
+
+    PaginasIndividuales(items),PaginaBH(items)
+    PaginaOrbea(items),PaginaPrincipalCarretera(items)
+    PaginaPrincipalEbike(items),ApiMongoDB()
+    PaginaPrincipalMTB(items)
 
 def insertBikes():
 
-    _id = input("Introduzaca el numero de serie: ")
+    max_id = mycol.find_one(sort=[("_id", pymongo.DESCENDING)])
+    _id = int(max_id.get("_id")) + 1
+    _id = str(_id).zfill(4)
     material = input("Material de la bicicleta: ")
     marca = input("Cual es la marca? ")
     grupo_piñon = input("Grupo del piñon? ")
@@ -81,17 +90,22 @@ def insertBikes():
 
     mycol.insert_one(myquery)
 
+    PaginasIndividuales(items),PaginaBH(items)
+    PaginaOrbea(items),PaginaPrincipalCarretera(items)
+    PaginaPrincipalEbike(items),ApiMongoDB()
+    PaginaPrincipalMTB(items)
+
+    
+
 def editBikes():
 
     numero = input("Introduzca el numero de serie de la bici que desea editar: ")
 
-    print (mycol.find_one({"serial" : numero}))
+    filterBySerial = {"serial" : numero}
+
+    print (mycol.find_one(filterBySerial))
 
     valor = input("Que caracteristica desea editar? ")
-
-    nombre = input("Cual es su actual valor? ")
-
-    myquery = {valor : nombre}
 
     cambio = input("Introduzca el cambio: ")
 
@@ -101,7 +115,7 @@ def editBikes():
     
         newvalues = {"$set" :{valor : cambio}}
     
-        mycol.update_one(myquery, newvalues)
+        mycol.update_one(filterBySerial, newvalues)
 
         print ("El cambio ha sido realizado correctamente!")
 
@@ -116,7 +130,6 @@ def editBikes():
 if __name__ == '__main__':
 
    funciones()
-
 
 
 
