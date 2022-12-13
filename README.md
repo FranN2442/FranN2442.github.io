@@ -58,6 +58,7 @@ Para llevarla a cabo, hemos usado el apartado de Projects de GitHub, donde nos p
 podemos asignar las tareas que va a realizar cada uno, y con objetivo que se van a realizar.
 El trabajo se a dividido en diferentes sprints donde en cada uno gracias al Product Owner hemos podido valorar
 la importancia de cada tarea a realizar.
+![Alt text](https://github.com/FranN2442/Proyecto_BicicletasDAW/blob/main/imagenes/backlog.png)
 # Pruebas
 # Clockfiy
 ## Diagrama de tiempo
