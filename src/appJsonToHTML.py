@@ -10,7 +10,7 @@ def escribirHTML(nombre, contenido):
 
 
 
-def cargarDatos(ruta='DataBase/bicisCarretera.json'):
+def cargarDatos(ruta='../DataBase/bicisCarretera.json'):
     with open(ruta) as contenido:
         jsondoc = json.load(contenido)
         mainkey = jsondoc.get('documents')
