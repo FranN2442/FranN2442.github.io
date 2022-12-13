@@ -66,10 +66,10 @@ def insertBikes():
     material = input("Material de la bicicleta: ")
     marca = input("Cual es la marca? ")
     grupo_piñon = input("Grupo del piñon? ")
-    modelo = input("Modelo de la bicicleta?")
+    modelo = input("Modelo de la bicicleta? ")
     talla = input("Que talla tiene? ")
     transmision = input("Tipo de transmisión: ")
-    peso = input("Que pesa la bicicleta? ¡Introduzca solo el numero!")
+    peso = input("Que pesa la bicicleta? ¡Introduzca solo el numero! ")
     p_dia = input("Que cuesta la bicicleta por dia? ")
     p_hora = input("Que custa por hora? ")
     loc = input("En que localidad esta disponible? ")
@@ -80,7 +80,7 @@ def insertBikes():
             - Carretera
             - MTB
             - E-Bike
-        Introduzca el resultado: """)
+        Introduzca el tipo: """)
 
     myquery = { 
 

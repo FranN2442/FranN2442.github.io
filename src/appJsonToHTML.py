@@ -24,14 +24,14 @@ def CheckWrite():
 
 def PaginaCategorias(items):
 
-    html_content = f"""
+    html_content = """
      <!DOCTYPE html>
     <html>
     <head>
         <title>Rent Bike Mallorca</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="PaginaCategorias.css" type="text/css"/>
+        <link rel="stylesheet" href="catpag.css" type="text/css"/>
         </head>
     <body>
         <nav>
@@ -134,10 +134,10 @@ def PaginaPrincipalMTB(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
-                         <p class="PAR">{brand}: {model}</p>
+                        <img class="img" src="{img}">
+                        <p class="PAR">{brand}: {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'), img = item.get('imagen'))
     html_content += """
                     </section>
                 </body>
@@ -187,10 +187,10 @@ def PaginaPrincipalCarretera(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0%22%3E">
+                        <img class="img" src="{img}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'), img =  item.get("imagen"))
         else:
             pass
     html_content += """
@@ -242,10 +242,10 @@ def PaginaPrincipalEbike(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" src="{img}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'),img = item.get('imagen'))
         else:
             pass
     html_content += """
@@ -394,10 +394,10 @@ def PaginaOrbea(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" src="{img}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'), img = item.get('imagen'))
         else:
             pass
     html_content += """
@@ -449,10 +449,10 @@ def PaginaBH(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" src="{img}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'), img = item.get('imagen'))
         else:
             pass
     html_content += """
@@ -505,10 +505,10 @@ def PaginaKTM(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" src="{img}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'), img = item.get('imagen'))
         else:
             pass
     html_content += """
@@ -559,10 +559,10 @@ def PaginaSpecialized(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" src="{img}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'), img = item.get('imagen'))
         else:
             pass
     html_content += """
@@ -613,10 +613,10 @@ def PaginaCanyon(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" src="{img}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'), img = item.get('imagen'))
         else:
             pass
     html_content += """
@@ -669,10 +669,10 @@ def PaginaMondraker(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" src="{img}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'), img = item.get('imagen'))
         else:
             pass
     html_content += """
@@ -723,10 +723,10 @@ def PaginaCannondale(items):
             html_content += """
                 <a id="link" href="{serial}.html">
                     <div class="box">
-                        <img class="img" src="https://contents.mediadecathlon.com/p2091636/k$cc0790528e1a07724f38362c6dc52705/sq/bicicleta-de-montaa-29-aluminio-ntt-sport-60-rojo.jpg?format=auto&f=800x0">
+                        <img class="img" src="{img}">
                          <p class="PAR">{brand} : {model}</p>
                     </div>
-                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
+                </a>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'), img = item.get('imagen'))
         else:
             pass
     html_content += """

@@ -1,5 +1,8 @@
-body,
-html {
+@charset "UTF-8";
+
+
+
+body,html {
   margin: 0;
   padding: 0;
   height: 50%;
@@ -96,7 +99,7 @@ a {
 header {
 
   height: 450px;
-  background: url(carretera.gif);
+  background: url(bici.jpg);
   background-size: cover;
   align-items: center;
   justify-content: center;
@@ -269,7 +272,7 @@ a {
 header {
 
   height: 450px;
-  background: url(../imagenes/carretera.gif);
+  background: url(carretera.gif);
   background-size: cover;
   align-items: center;
   justify-content: center;
