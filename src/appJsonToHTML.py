@@ -81,7 +81,7 @@ def PaginaCategorias(items):
     </body>
 </html>"""
 
-    escribirHTML("PaginaCategorias", html_content)
+    return escribirHTML("PaginaCategorias", html_content)
 
 
 def PaginaPrincipalMTB(items):
@@ -122,7 +122,7 @@ def PaginaPrincipalMTB(items):
                 </body>
             </html>"""
 
-    escribirHTML("PaginaMTB", html_content)
+    return escribirHTML("PaginaMTB", html_content)
 
 
 def PaginaPrincipalCarretera(items):
@@ -166,7 +166,7 @@ def PaginaPrincipalCarretera(items):
             </body>
         </html>"""
 
-    escribirHTML("PaginaCarretera", html_content)
+    return escribirHTML("PaginaCarretera", html_content)
 
 
 def PaginaPrincipalEbike(items):
@@ -210,21 +210,19 @@ def PaginaPrincipalEbike(items):
             </body>
         </html>"""
 
-    escribirHTML("PaginaE-Bike", html_content)
+    return escribirHTML("PaginaE-Bike", html_content)
 
 
 def PaginasIndividuales(items):
     for item in items:
         html_content = f"""
-     <!DOCTYPE html>
+        <!DOCTYPE html>
 
-    <html>
+        <html>
         <head>
             <title>TODO supply a title</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="../css/Individuales.css" type="text/css"/>
-            <link rel="stylesheet" href="../css/Individuales.css" type="text/css"/>
             <link rel="stylesheet" href="../../css/PaginaIndividual.css" type="text/css"/>
         </head>
         <body>
@@ -282,10 +280,7 @@ def PaginasIndividuales(items):
             </div>
         </body>
     </html>"""
-
         escribirHTML("PaginasIndividuales/" + item.get('serial'), html_content)
-    return True
-
 
 def PaginaOrbea(items):
     html_content = """
@@ -323,7 +318,7 @@ def PaginaOrbea(items):
         else:
             pass
         brand = item.get('brand')
-        escribirHTML(brand, html_content)
+        return escribirHTML(brand, html_content)
 
 def PaginaBH(items):
     html_content = """
@@ -358,7 +353,7 @@ def PaginaBH(items):
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
             brand = item.get('brand')
-            escribirHTML(brand, html_content)
+            return escribirHTML(brand, html_content)
         else:
             pass
 
@@ -396,7 +391,7 @@ def PaginaKTM(items):
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
             brand=item.get('brand')
-            escribirHTML(brand, html_content)                
+            return escribirHTML(brand, html_content)                
         else:
             pass
 
@@ -433,7 +428,7 @@ def PaginaSpecialized(items):
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
             brand=item.get('brand')
-            escribirHTML(brand, html_content)                
+            return escribirHTML(brand, html_content)                
         else:
             pass
 
@@ -470,7 +465,7 @@ def PaginaCanyon(items):
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
             brand=item.get('brand')
-            escribirHTML(brand, html_content)                
+            return escribirHTML(brand, html_content)                
         else:
             pass
 
@@ -507,34 +502,7 @@ def PaginaMondraker(items):
                     </a>
                 </div>""".format(model=item.get('model'), brand=item.get('brand'), serial=item.get('serial'))
             brand=item.get('brand')
-            escribirHTML(brand, html_content)                
+            return escribirHTML(brand, html_content)                
         else:
             pass
     
-
-
-if __name__ == "__main__":
-
-    items = cargarDatos()
-
-    PaginaCategorias(items)
-
-    PaginaPrincipalMTB(items)
-
-    PaginaPrincipalCarretera(items)
-
-    PaginaPrincipalEbike(items)
-
-    PaginasIndividuales(items)
-
-    PaginaOrbea(items)
-    
-    PaginaBH(items)
-    
-    PaginaKTM(items)
-    
-    PaginaSpecialized(items)
-    
-    PaginaCanyon(items)
-    
-    PaginaMondraker(items)
