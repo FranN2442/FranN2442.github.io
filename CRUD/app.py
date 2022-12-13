@@ -1,6 +1,7 @@
 import pymongo
-
+from src.appJsonToHTML import cargarDatos
 from src.DB.ApiMongoDB import ApiMongoDB
+from src.appJsonToHTML import PaginaCanyon as CanyonHTML, PaginaBH as BhHTML, PaginaCategorias, PaginaKTM as KTMHtml, PaginaMondraker as MondrakerHTML , PaginaOrbea as ObreaHTML, PaginaPrincipalCarretera as CarreteraHTML , PaginaPrincipalEbike as EBikeHTML , PaginaPrincipalMTB as MTBhtml , PaginasIndividuales as IndiviHTML , PaginaSpecialized as SpezHTML
 
 myclient = pymongo.MongoClient("mongodb+srv://Fran:20Fran04.@bikecluster.fvhjzpv.mongodb.net/test")
 mydb = myclient["BikesRentalDB"]
@@ -8,13 +9,19 @@ mycol = mydb["AllBikesCollection"]
 
 
 def funciones():
-    print ("""
 
-Que deseas realizar?
-    -Editar
-    -Eliminar
-    -Insertar   
----------------------
+    ApiMongoDB()
+
+    items = cargarDatos()
+
+    print ("""
+  <............................>
+    Que deseas realizar?     |
+        -Editar              |
+        -Eliminar            |
+        -Insertar            |
+        -Ejecutar Programa   |
+  <---------------------------->
     """)
     funcion = input()
 
@@ -23,9 +30,22 @@ Que deseas realizar?
         editBikes()
     elif funcion == "Eliminar":
             deleteBikes()
-    else:
-        if funcion == "Insertar":
+    elif funcion == "Insertar":
             insertBikes()
+    elif funcion == "Ejecutar Programa":
+
+            try:    
+                BhHTML(items),CanyonHTML(items),
+                PaginaCategorias(items),SpezHTML(items),
+                MondrakerHTML(items),ObreaHTML(items),
+                EBikeHTML(items),IndiviHTML(items),
+                MTBhtml(items),CarreteraHTML(items)
+            except:
+                print ("Algo a sucedido en el programa!")
+
+                return exit
+
+
     
 def deleteBikes():
 
