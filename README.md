@@ -47,7 +47,10 @@ python3 src/app.py
 ## Arquitectura
 ![Alt text](https://github.com/FranN2442/Proyecto_BicicletasDAW/blob/main/imagenes/ARQ.png)
 ## Diagrama de uso
+El uso de la aplicacion se basa en la facilitacion de la ediccion, insercion y eliminacion de documentos en una bae de datos,
+donde tambien se genera unos html a partir de la informaccion que se extrae en la base de datos en formato HTML.
 ## Diagrama de componentes
+![Alt text](https://github.com/FranN2442/Proyecto_BicicletasDAW/blob/main/imagenes/COMP.png)
 # Metodologia
 # Pruebas
 # Clockfiy
