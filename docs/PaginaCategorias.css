@@ -1,6 +1,4 @@
-@media only screen and (min-width:723px),(min-height= 902px) {
-
-  body,html{margin:0;padding:0;height:50%;}
+body,html{margin:0;padding:0;height:50%;}
   #contenedor{
 
   display: block;
@@ -151,18 +149,17 @@
     display: flex;
     height: 100%;
 }
-}
-@media only screen and (max-width:722px),(max-height= 901px) {
 
-  body,html{margin:0;padding:0;height:50%;}
-  #contenedor{
+
+body,html{margin:0;padding:0;height:50%;}
+#contenedor{
 
   display: block;
   
 
 
   }
-  .mtb 
+.mtb 
   {
     top: 0%;
     left: 0%;
@@ -177,7 +174,7 @@
   
   
   }
-  .carretera 
+.carretera 
   {
     top: 0%;
     left: 0%;
@@ -191,7 +188,7 @@
     background-size: cover;
   
   }
-  .e-bike 
+.e-bike 
   {
     top: 0%;
     left: 0%;
@@ -208,7 +205,7 @@
     width: 100%;
     opacity: 100;
   }
-  p{
+p{
     
     font-size: 15px;
     color: wheat;
@@ -216,7 +213,7 @@
     font-family: 'PT Sans';
     margin: 5px;
   }
-  h2{
+h2{
     
     font-size: 30px;
     color: wheat;
@@ -225,7 +222,7 @@
     margin-bottom: 5px ;
     margin-top: 8px;
   }
-  .wrap{
+.wrap{
       
     text-align: center;
     padding: 1rem 2rem;
@@ -237,11 +234,11 @@
         
     
   }
-  a{
+a{
 
     text-decoration: none
   }
-  header{
+header{
 
     height: 450px;
     background: url(../imagenes/carretera.gif);
@@ -250,7 +247,7 @@
     justify-content: center;
     display: flex;
   }
-  #presentacion{
+#presentacion{
 
     color: wheat;
     font-size: 40px;
@@ -258,29 +255,28 @@
   
 
   }
-  nav{
+nav{
     
     height: 50px;
     border: solid black 5px;
     justify-content: center;
     text-decoration: none;
   }
-  #lista li{
+#lista li{
   
     display:inline;
     padding: 2px;
     margin: 2px
   }
-  #lista a{
+#lista a{
   
     text-decoration: none;
     color: black;
     font-size: 13px  
   }
-  #lista li:hover{
+#lista li:hover{
   
     border: 3px black solid;
     border-radius: 5px
   
   }
-}
