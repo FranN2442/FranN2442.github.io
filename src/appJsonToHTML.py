@@ -101,7 +101,7 @@ def PaginaPrincipalMTB(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="mtb.css" type="text/css"/>
+                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
                 </head>
 
                 <body>
@@ -208,7 +208,7 @@ def PaginaPrincipalEbike(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="ebike.css" type="text/css"/>
+                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
                 </head>
 
                 <body>
@@ -360,7 +360,7 @@ def PaginaOrbea(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="PaginaMarcas.css" type="text/css"/>
+                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
                 </head>
 
                 <body>
@@ -415,7 +415,7 @@ def PaginaBH(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="PaginaMarcas.css" type="text/css"/>
+                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
                 </head>
 
                 <body>
@@ -471,7 +471,7 @@ def PaginaKTM(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="PaginaMarcas.css" type="text/css"/>
+                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
                 </head>
 
                 <body>
@@ -525,7 +525,7 @@ def PaginaSpecialized(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="PaginaMarcas.css" type="text/css"/>
+                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
                 </head>
 
                 <body>
@@ -579,7 +579,7 @@ def PaginaCanyon(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="PaginaMarcas.css" type="text/css"/>
+                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
                 </head>
 
                 <body>
@@ -635,7 +635,7 @@ def PaginaMondraker(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="PaginaMarcas.css" type="text/css"/>
+                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
                 </head>
 
                 <body>
@@ -689,7 +689,7 @@ def PaginaCannondale(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="PaginaMarcas.css" type="text/css"/>
+                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
                 </head>
 
                 <body>
