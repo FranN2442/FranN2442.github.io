@@ -65,7 +65,7 @@ def PaginaCategorias(items):
                     <div class="mtb">
                         <div class="wrap">
                             <h2 class="header2">MOUNTAIN BIKE</h2>
-                             <p class="PAR">NALINE</p>
+                             <p class="PAR">For adrenalone lovers</p>
                         </div>
                     </div>
                 </a>
@@ -73,7 +73,7 @@ def PaginaCategorias(items):
                     <div class="carretera">
                         <div class="wrap">
                             <h2 class="header2">CARRETERA</h2>
-                             <p class="PAR">DSDSD</p>
+                             <p class="PAR">for true racers</p>
                         </div>
                     </div>
                 </a>
@@ -81,7 +81,7 @@ def PaginaCategorias(items):
                     <div class="e-bike">
                         <div class="wrap">
                             <h2 class="header2">E-BIKE</h2>
-                             <p class="PAR">HELP</p>
+                             <p class="PAR">for electric help</p>
                         </div>
                     </div>
                 </a>
@@ -292,7 +292,7 @@ def PaginasIndividuales(items):
             <h1 class="title"> {item.get('brand')}:{item.get('model')}</h1>
             <section id="contenedor">
                 <div id="imagen">
-                    <img src="{item.get('imagen')}" alt="Descripcion de la imagen">
+                    <img href="{item.get('imagen')}" alt="Descripcion de la imagen">
                 </div>
                 <div id="tabla">
                     <table>
