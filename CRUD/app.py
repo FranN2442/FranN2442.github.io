@@ -42,14 +42,14 @@ def funciones():
                 EBikeHTML(items),IndiviHTML(items),
                 MTBhtml(items),CarreteraHTML(items),PaginaCannondale(items),
                 KTMHtml(items),PaginaContactar()
-                
+
             except:
                 print ("Algo a sucedido en el programa!")
 
                 return exit
 
 
-    
+
 def deleteBikes():
 
     valor = input("Que bicicleta quieres eliminar?")
@@ -77,15 +77,13 @@ def insertBikes():
     serial = input("Introduzca el numero de serie: ")
     tipo = input("""
         Que tipo de bicicleta es? 
-
             - Carretera
             - MTB
             - E-Bike
-
         Introduzca el resultado: """)
-    
+
     myquery = { 
-            
+
                 "_id" : _id,
                 "material" : material, 
                 "brand" : marca, 
@@ -122,9 +120,9 @@ def editBikes():
     conf = input("Estas seguro del cambio? (S/N)")
 
     if conf == "S":
-    
+
         newvalues = {"$set" :{valor : cambio}}
-    
+
         mycol.update_one(filtro, newvalues)
 
         print ("El cambio ha sido realizado correctamente!")
@@ -136,14 +134,9 @@ def editBikes():
         print ("Volviendo ha editar...")
         return editBikes()
 
-    
+
 
 
 if __name__ == '__main__':
 
    funciones()
-
-
-
-
-
