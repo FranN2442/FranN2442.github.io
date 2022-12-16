@@ -254,4 +254,56 @@ span {
     width: 237px;
 
 }
+#mapa {
+  display: none;
+  position: relative;
+  align-self: left;
+  text-align: left;
+  margin: 5%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fbfbfb;
+  border: 3px;
+  border-color: black;
+}
+
+
+#contacto{
+  display: block;
+  align-self:right;
+  margin: 29%;
+  width: 266 px;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fbfbfb;
+  text-align: left;
+}
+input {
+  background-color: #fbfbfb;
+  width: 255px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #52d3fe;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ab4493;
+  border-color: #ab4493;
+  border-style: solid;
+  border-radius: 10px;
+  width: 266px;
+  cursor: pointer;
+}
+
 }
