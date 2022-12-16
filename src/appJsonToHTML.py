@@ -17,12 +17,12 @@ def cargarDatos(ruta='DataBase/bicisCarretera.json'):
         return mainkey
 
 
-def CheckWrite():
+def checkWrite():
     os.path.exists("../index.html")
 
 
 
-def PaginaCategorias(items):
+def paginaCategorias(items):
 
     html_content = """
      <!DOCTYPE html>
@@ -37,19 +37,19 @@ def PaginaCategorias(items):
         <nav>
             <ul id="lista">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="PaginaContacto.html">CONTACT</a></li>
-                <li><a href="PaginaMTB.html">MTB</a></li>
-                <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                <li><a href="paginaContacto.html">CONTACT</a></li>
+                <li><a href="paginaMTB.html">MTB</a></li>
+                <li><a href="paginaCarretera.html">CARRETERA</a></li>
+                <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                 <li><a>MARCAS</a>
                     <ul>
-                        <li><a href="PaginaBH.html">BH</a></li>
-                        <li><a href="PaginaCannondale.html">Cannondale</a></li>
-                        <li><a href="PaginaCanyon.html">Canyon</a></li>
-                        <li><a href="PaginaKTM.html">KTM</a></li>
-                        <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                        <li><a href="PaginaObrea.html">Orbea</a></li>
-                        <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                        <li><a href="paginaBH.html">BH</a></li>
+                        <li><a href="paginaCannondale.html">Cannondale</a></li>
+                        <li><a href="paginaCanyon.html">Canyon</a></li>
+                        <li><a href="paginaKTM.html">KTM</a></li>
+                        <li><a href="paginaMondraker.html">Mondraker</a></li>
+                        <li><a href="paginaObrea.html">Orbea</a></li>
+                        <li><a href="paginaSpecialized.html">Specialized</a></li>
                     </ul>
                 </li>
             </ul>
@@ -93,7 +93,7 @@ def PaginaCategorias(items):
     return escribirHTML("index", html_content)
 
 
-def PaginaPrincipalMTB(items):
+def paginaPrincipalMTB(items):
     html_content = """
             <!DOCTYPE html>
             <html>
@@ -101,26 +101,26 @@ def PaginaPrincipalMTB(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
+                    <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
                 <body>
                     <nav>
                         <ul id="lista">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
-                            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a href="paginaContacto.html">CONTACT</a></li>
+                            <li><a href="paginaMTB.html">MTB</a></li>
+                            <li><a href="paginaCarretera.html">CARRETERA</a></li>
+                            <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                             <li><a>MARCAS</a>
                                 <ul>
-                                    <li><a href="PaginaBH.html">BH</a></li>
-                            <li><a href="PaginaCannondale.html">Cannondale</a></li>
-                            <li><a href="PaginaCanyon.html">Canyon</a></li>
-                            <li><a href="KTM.html">KTM</a></li>
-                            <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                            <li><a href="PaginaOrbea.html">Orbea</a></li>
-                            <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                                    <li><a href="paginaBH.html">BH</a></li>
+                            <li><a href="paginaCannondale.html">Cannondale</a></li>
+                            <li><a href="paginaCanyon.html">Canyon</a></li>
+                            <li><a href="paginaKTM.html">KTM</a></li>
+                            <li><a href="paginaMondraker.html">Mondraker</a></li>
+                            <li><a href="paginaOrbea.html">Orbea</a></li>
+                            <li><a href="paginaSpecialized.html">Specialized</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -143,10 +143,10 @@ def PaginaPrincipalMTB(items):
                 </body>
             </html>"""
 
-    return escribirHTML("PaginaMTB", html_content)
+    return escribirHTML("paginaMTB", html_content)
 
 
-def PaginaPrincipalCarretera(items):
+def paginaPrincipalCarretera(items):
     html_content = """
             <!DOCTYPE html>
             <html>
@@ -154,26 +154,26 @@ def PaginaPrincipalCarretera(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
+                    <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
                 <body>
                     <nav>
                         <ul id="lista">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
-                            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a href="paginaContacto.html">CONTACT</a></li>
+                            <li><a href="paginaMTB.html">MTB</a></li>
+                            <li><a href="paginaCarretera.html">CARRETERA</a></li>
+                            <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                             <li><a>MARCAS</a>
                                 <ul>
-                                    <li><a href="PaginaBH.html">BH</a></li>
-                            <li><a href="PaginaAGINACannondale.html">Cannondale</a></li>
-                            <li><a href="PaginaCanyon.html">Canyon</a></li>
-                            <li><a href="KTM.html">KTM</a></li>
-                            <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                            <li><a href="PaginaOrbea.html">Orbea</a></li>
-                            <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                                    <li><a href="paginaBH.html">BH</a></li>
+                            <li><a href="paginaAGINACannondale.html">Cannondale</a></li>
+                            <li><a href="paginaCanyon.html">Canyon</a></li>
+                            <li><a href="paginaKTM.html">KTM</a></li>
+                            <li><a href="paginaMondraker.html">Mondraker</a></li>
+                            <li><a href="paginaOrbea.html">Orbea</a></li>
+                            <li><a href="paginaSpecialized.html">Specialized</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -198,10 +198,10 @@ def PaginaPrincipalCarretera(items):
             </body>
         </html>"""
 
-    return escribirHTML("PaginaCarretera", html_content)
+    return escribirHTML("paginaCarretera", html_content)
 
 
-def PaginaPrincipalEbike(items):
+def paginaPrincipalEbike(items):
     html_content = """
             <!DOCTYPE html>
             <html>
@@ -209,26 +209,26 @@ def PaginaPrincipalEbike(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
+                    <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
                 <body>
                     <nav>
                         <ul id="lista">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
-                            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a href="paginaContacto.html">CONTACT</a></li>
+                            <li><a href="paginaMTB.html">MTB</a></li>
+                            <li><a href="paginaCarretera.html">CARRETERA</a></li>
+                            <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                             <li><a>MARCAS</a>
                                 <ul>
-                                    <li><a href="PaginaBH.html">BH</a></li>
-                            <li><a href="PaginaAGINACannondale.html">Cannondale</a></li>
-                            <li><a href="PaginaCanyon.html">Canyon</a></li>
-                            <li><a href="KTM.html">KTM</a></li>
-                            <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                            <li><a href="PaginaOrbea.html">Orbea</a></li>
-                            <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                                    <li><a href="paginaBH.html">BH</a></li>
+                            <li><a href="paginaAGINACannondale.html">Cannondale</a></li>
+                            <li><a href="paginaCanyon.html">Canyon</a></li>
+                            <li><a href="paginaKTM.html">KTM</a></li>
+                            <li><a href="paginaMondraker.html">Mondraker</a></li>
+                            <li><a href="paginaOrbea.html">Orbea</a></li>
+                            <li><a href="paginaSpecialized.html">Specialized</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -253,10 +253,10 @@ def PaginaPrincipalEbike(items):
             </body>
         </html>"""
 
-    return escribirHTML("PaginaE-Bike", html_content)
+    return escribirHTML("paginaE-Bike", html_content)
 
 
-def PaginasIndividuales(items):
+def paginasIndividuales(items):
     for item in items:
         html_content = """
         <!DOCTYPE html>
@@ -270,29 +270,29 @@ def PaginasIndividuales(items):
         </head>
         <nav>
             <ul id="lista">
-                <li><a href="PaginaCategorias.html">HOME</a></li>
-                <li><a href="PaginaContacto.html">CONTACT</a></li>
-                <li><a href="PaginaMTB.html">MTB</a></li>
-                <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="paginaContacto.html">CONTACT</a></li>
+                <li><a href="paginaMTB.html">MTB</a></li>
+                <li><a href="paginaCarretera.html">CARRETERA</a></li>
+                <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                 <li><a>MARCAS</a>
                     <ul>
-                        <li><a href="PaginaBH.html">BH</a></li>
-                        <li><a href="PaginaCannondale.html">Cannondale</a></li>
-                        <li><a href="PaginaCanyon.html">Canyon</a></li>
-                        <li><a href="PaginaKTM.html">KTM</a></li>
-                        <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                        <li><a href="PaginaOrbea.html">Orbea</a></li>
-                        <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                        <li><a href="paginaBH.html">BH</a></li>
+                        <li><a href="paginaCannondale.html">Cannondale</a></li>
+                        <li><a href="paginaCanyon.html">Canyon</a></li>
+                        <li><a href="paginaKTM.html">KTM</a></li>
+                        <li><a href="paginaMondraker.html">Mondraker</a></li>
+                        <li><a href="paginaOrbea.html">Orbea</a></li>
+                        <li><a href="paginaSpecialized.html">Specialized</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
         <body>
-            <h1 class="title"> {item.get('brand')}:{item.get('model')}</h1>
+            # <h1 class="title"> {brand}:{modelo}</h1>
             <section id="contenedor">
                 <div id="imagen">
-                    <img href="{item.get('imagen')}" alt="Descripcion de la imagen">
+                    <img class="img" src="{img}">
                 </div>
                 <div id="tabla">
                     <table>
@@ -306,7 +306,7 @@ def PaginasIndividuales(items):
                                 
                             </tr>
                         </thead>
-                        <tbody>"""
+                        <tbody>""".format(img = item.get('imagen'), brand = item.get ('brand'), modelo = item.get('model'))
                         
         for k, v in item.items():
             html_content += """
@@ -353,7 +353,7 @@ def PaginasIndividuales(items):
 
         escribirHTML(item.get('serial'), html_content)
 
-def PaginaOrbea(items):
+def paginaOrbea(items):
     html_content = """
             <!DOCTYPE html>
             <html>
@@ -361,26 +361,26 @@ def PaginaOrbea(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
+                    <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
                 <body>
                     <nav>
                         <ul id="lista">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
-                            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a href="paginaContacto.html">CONTACT</a></li>
+                            <li><a href="paginaMTB.html">MTB</a></li>
+                            <li><a href="paginaCarretera.html">CARRETERA</a></li>
+                            <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                             <li><a>MARCAS</a>
                                 <ul>
-                                    <li><a href="PaginaBH.html">BH</a></li>
-                                    <li><a href="PaginaCannondale.html">Cannondale</a></li>
-                                    <li><a href="PaginaCanyon.html">Canyon</a></li>
-                                    <li><a href="PaginaKTM.html">KTM</a></li>
-                                    <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                                    <li><a href="PaginaOrbea.html">Orbea</a></li>
-                                    <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                                    <li><a href="paginaBH.html">BH</a></li>
+                                    <li><a href="paginaCannondale.html">Cannondale</a></li>
+                                    <li><a href="paginaCanyon.html">Canyon</a></li>
+                                    <li><a href="paginaKTM.html">KTM</a></li>
+                                    <li><a href="paginaMondraker.html">Mondraker</a></li>
+                                    <li><a href="paginaOrbea.html">Orbea</a></li>
+                                    <li><a href="paginaSpecialized.html">Specialized</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -405,10 +405,10 @@ def PaginaOrbea(items):
             </body>
         </html>"""
 
-    return escribirHTML("PaginaOrbea", html_content)
+    return escribirHTML("paginaOrbea", html_content)
 
 
-def PaginaBH(items):
+def paginaBH(items):
     html_content = """
             <!DOCTYPE html>
             <html>
@@ -416,26 +416,26 @@ def PaginaBH(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
+                    <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
                 <body>
                     <nav>
                         <ul id="lista">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
-                            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a href="paginaContacto.html">CONTACT</a></li>
+                            <li><a href="paginaMTB.html">MTB</a></li>
+                            <li><a href="paginaCarretera.html">CARRETERA</a></li>
+                            <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                             <li><a>MARCAS</a>
                                 <ul>
-                                    <li><a href="PaginaBH.html">BH</a></li>
-                            <li><a href="PaginaCannondale.html">Cannondale</a></li>
-                            <li><a href="PaginaCanyon.html">Canyon</a></li>
-                            <li><a href="PaginaKTM.html">KTM</a></li>
-                            <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                            <li><a href="PaginaOrbea.html">Orbea</a></li>
-                            <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                                    <li><a href="paginaBH.html">BH</a></li>
+                            <li><a href="paginaCannondale.html">Cannondale</a></li>
+                            <li><a href="paginaCanyon.html">Canyon</a></li>
+                            <li><a href="paginaKTM.html">KTM</a></li>
+                            <li><a href="paginaMondraker.html">Mondraker</a></li>
+                            <li><a href="paginaOrbea.html">Orbea</a></li>
+                            <li><a href="paginaSpecialized.html">Specialized</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -460,11 +460,11 @@ def PaginaBH(items):
             </body>
         </html>"""
 
-    return escribirHTML("PaginaBH", html_content)
+    return escribirHTML("paginaBH", html_content)
 
 
 
-def PaginaKTM(items):
+def paginaKTM(items):
     html_content = """
             <!DOCTYPE html>
             <html>
@@ -472,26 +472,26 @@ def PaginaKTM(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
+                    <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
                 <body>
                     <nav>
                         <ul id="lista">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
-                            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a href="paginaContacto.html">CONTACT</a></li>
+                            <li><a href="paginaMTB.html">MTB</a></li>
+                            <li><a href="paginaCarretera.html">CARRETERA</a></li>
+                            <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                             <li><a>MARCAS</a>
                                 <ul>
-                                    <li><a href="PaginaBH.html">BH</a></li>
-                            <li><a href="PaginaCannondale.html">Cannondale</a></li>
-                            <li><a href="PaginaCanyon.html">Canyon</a></li>
-                            <li><a href="PaginaKTM.html">KTM</a></li>
-                            <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                            <li><a href="PaginaOrbea.html">Orbea</a></li>
-                            <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                                    <li><a href="paginaBH.html">BH</a></li>
+                            <li><a href="paginaCannondale.html">Cannondale</a></li>
+                            <li><a href="paginaCanyon.html">Canyon</a></li>
+                            <li><a href="paginaKTM.html">KTM</a></li>
+                            <li><a href="paginaMondraker.html">Mondraker</a></li>
+                            <li><a href="paginaOrbea.html">Orbea</a></li>
+                            <li><a href="paginaSpecialized.html">Specialized</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -516,9 +516,9 @@ def PaginaKTM(items):
             </body>
         </html>"""
 
-    return escribirHTML("PaginaKTM", html_content)
+    return escribirHTML("paginaKTM", html_content)
         
-def PaginaSpecialized(items):
+def paginaSpecialized(items):
     html_content = """
             <!DOCTYPE html>
             <html>
@@ -526,26 +526,26 @@ def PaginaSpecialized(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
+                    <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
                 <body>
                     <nav>
                         <ul id="lista">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
+                            <li><a href="paginaContacto.html">CONTACT</a></li>
+                            <li><a href="paginaMTB.html">MTB</a></li>
                             <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                             <li><a>MARCAS</a>
                                 <ul>
-                                    <li><a href="PaginaBH.html">BH</a></li>
-                            <li><a href="PaginaCannondale.html">Cannondale</a></li>
-                            <li><a href="PaginaCanyon.html">Canyon</a></li>
-                            <li><a href="PaginaKTM.html">KTM</a></li>
-                            <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                            <li><a href="PaginaOrbea.html">Orbea</a></li>
-                            <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                                    <li><a href="paginaBH.html">BH</a></li>
+                            <li><a href="paginaCannondale.html">Cannondale</a></li>
+                            <li><a href="paginaCanyon.html">Canyon</a></li>
+                            <li><a href="paginaKTM.html">KTM</a></li>
+                            <li><a href="paginaMondraker.html">Mondraker</a></li>
+                            <li><a href="paginaOrbea.html">Orbea</a></li>
+                            <li><a href="paginaSpecialized.html">Specialized</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -570,9 +570,9 @@ def PaginaSpecialized(items):
             </body>
         </html>"""
 
-    return escribirHTML("PaginaSpecialized", html_content)
+    return escribirHTML("paginaSpecialized", html_content)
 
-def PaginaCanyon(items):
+def paginaCanyon(items):
     html_content = """
             <!DOCTYPE html>
             <html>
@@ -580,20 +580,20 @@ def PaginaCanyon(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
+                    <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
                 <body>
                     <nav>
                         <ul id="lista">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
-                            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a href="paginaContacto.html">CONTACT</a></li>
+                            <li><a href="paginaMTB.html">MTB</a></li>
+                            <li><a href="paginaCarretera.html">CARRETERA</a></li>
+                            <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                             <li><a>MARCAS</a>
                                 <ul>
-                                    <li><a href="PaginaBH.html">BH</a></li>
+                                    <li><a href="paginaBH.html">BH</a></li>
                             <li><a href="PaginaCannondale.html">Cannondale</a></li>
                             <li><a href="PaginaCanyon.html">Canyon</a></li>
                             <li><a href="PaginaKTM.html">KTM</a></li>
@@ -624,11 +624,11 @@ def PaginaCanyon(items):
             </body>
         </html>"""
 
-    return escribirHTML("PaginaCanyon", html_content)
+    return escribirHTML("paginaCanyon", html_content)
 
         
         
-def PaginaMondraker(items):
+def paginaMondraker(items):
     html_content = """
             <!DOCTYPE html>
             <html>
@@ -636,26 +636,26 @@ def PaginaMondraker(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
+                    <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
                 <body>
                     <nav>
                         <ul id="lista">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
-                            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a href="paginaContacto.html">CONTACT</a></li>
+                            <li><a href="paginaMTB.html">MTB</a></li>
+                            <li><a href="paginaCarretera.html">CARRETERA</a></li>
+                            <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                             <li><a>MARCAS</a>
                                 <ul>
-                                    <li><a href="PaginaBH.html">BH</a></li>
-                            <li><a href="PaginaCannondale.html">Cannondale</a></li>
-                            <li><a href="PaginaCanyon.html">Canyon</a></li>
-                            <li><a href="PaginaKTM.html">KTM</a></li>
-                            <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                            <li><a href="PaginaOrbea.html">Orbea</a></li>
-                            <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                                    <li><a href="paginaBH.html">BH</a></li>
+                            <li><a href="paginaCannondale.html">Cannondale</a></li>
+                            <li><a href="paginaCanyon.html">Canyon</a></li>
+                            <li><a href="paginaKTM.html">KTM</a></li>
+                            <li><a href="paginaMondraker.html">Mondraker</a></li>
+                            <li><a href="paginaOrbea.html">Orbea</a></li>
+                            <li><a href="paginaSpecialized.html">Specialized</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -680,9 +680,9 @@ def PaginaMondraker(items):
             </body>
         </html>"""
 
-    return escribirHTML("PaginaMondraker", html_content)
+    return escribirHTML("paginaMondraker", html_content)
 
-def PaginaCannondale(items):
+def paginaCannondale(items):
     html_content = """
             <!DOCTYPE html>
             <html>
@@ -690,26 +690,26 @@ def PaginaCannondale(items):
                     <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="stylesheet" href="carretera.css" type="text/css"/>
+                    <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
                 <body>
                     <nav>
                         <ul id="lista">
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="PaginaContacto.html">CONTACT</a></li>
-                            <li><a href="PaginaMTB.html">MTB</a></li>
-                            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-                            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+                            <li><a href="paginaContacto.html">CONTACT</a></li>
+                            <li><a href="paginaMTB.html">MTB</a></li>
+                            <li><a href="paginaCarretera.html">CARRETERA</a></li>
+                            <li><a href="paginaE-Bike.html">E-BIKE</a></li>
                             <li><a>MARCAS</a>
                                 <ul>
-                                    <li><a href="PaginaBH.html">BH</a></li>
-                            <li><a href="PaginaCannondale.html">Cannondale</a></li>
-                            <li><a href="PaginaCanyon.html">Canyon</a></li>
-                            <li><a href="PaginaKTM.html">KTM</a></li>
-                            <li><a href="PaginaMondraker.html">Mondraker</a></li>
-                            <li><a href="PaginaOrbea.html">Orbea</a></li>
-                            <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                                    <li><a href="paginaBH.html">BH</a></li>
+                            <li><a href="paginaCannondale.html">Cannondale</a></li>
+                            <li><a href="paginaCanyon.html">Canyon</a></li>
+                            <li><a href="paginaKTM.html">KTM</a></li>
+                            <li><a href="paginaMondraker.html">Mondraker</a></li>
+                            <li><a href="paginaOrbea.html">Orbea</a></li>
+                            <li><a href="paginaSpecialized.html">Specialized</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -734,9 +734,9 @@ def PaginaCannondale(items):
             </body>
         </html>"""
 
-    return escribirHTML("PaginaCannondale", html_content)
+    return escribirHTML("paginaCannondale", html_content)
 
-def PaginaContactar():
+def paginaContactar():
 
     html_content = """
 
@@ -754,19 +754,19 @@ def PaginaContactar():
     <nav>
         <ul id="lista">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="PaginaContacto.html">CONTACT</a></li>
-            <li><a href="PaginaMTB.html">MTB</a></li>
-            <li><a href="PaginaCarretera.html">CARRETERA</a></li>
-            <li><a href="PaginaE-Bike.html">E-BIKE</a></li>
+            <li><a href="paginaContacto.html">CONTACT</a></li>
+            <li><a href="paginaMTB.html">MTB</a></li>
+            <li><a href="paginaCarretera.html">CARRETERA</a></li>
+            <li><a href="paginaE-Bike.html">E-BIKE</a></li>
             <li><a>MARCAS</a>
                 <ul>
-                    <li><a href="PaginaBH.html">BH</a></li>
-            <li><a href="PaginaCannondale.html">Cannondale</a></li>
-            <li><a href="PaginaCanyon.html">Canyon</a></li>
-            <li><a href="PaginaKTM.html">KTM</a></li>
-            <li><a href="PaginaMondraker.html">Mondraker</a></li>
-            <li><a href="PaginaOrbea.html">Orbea</a></li>
-            <li><a href="PaginaSpecialized.html">Specialized</a></li>
+                    <li><a href="paginaBH.html">BH</a></li>
+            <li><a href="paginaCannondale.html">Cannondale</a></li>
+            <li><a href="paginaCanyon.html">Canyon</a></li>
+            <li><a href="paginaKTM.html">KTM</a></li>
+            <li><a href="paginaMondraker.html">Mondraker</a></li>
+            <li><a href="paginaOrbea.html">Orbea</a></li>
+            <li><a href="paginaSpecialized.html">Specialized</a></li>
                 </ul>
             </li>
         </ul>
@@ -840,4 +840,5 @@ def PaginaContactar():
 </body>
     
     """
-    return escribirHTML("PaginaContacto", html_content)
+    return escribirHTML("paginaContacto", html_content)
+

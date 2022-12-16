@@ -1,3 +1,4 @@
+@media (min-height:852px) , (max-width:1588px){
 body,html {
   margin: 0;
   padding: 0;
@@ -119,3 +120,55 @@ display: block;
 
 }
 
+}
+@media (max-width:391px) , (max-height:845px){
+
+  #lista > li > a {
+
+    display: block;
+  padding: 11px 8px;
+  color: black;
+  text-decoration: none;
+  font-size: 11px ;
+  }
+  .box {
+
+    border: 0px solid;
+    padding: 10px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+    background-color: white;
+    width: 140px;
+    height: 150px;
+    justify-self: center;
+    text-align: center;
+  
+  
+  }
+  .img {
+
+    margin: 0px;
+    width: 138px;
+    height: 99px;
+    border-radius: 5px
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}
