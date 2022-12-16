@@ -1,4 +1,4 @@
-    
+@media (min-height:1588px) , (min-width:852px){
     nav {
     height: 65px;
     width: 100%;
@@ -120,3 +120,135 @@
 }
 
 body{margin: 0px}
+
+}
+@media (max-height:845px) , (max-width:391px){
+
+    nav {
+        height: 43px;
+        width: 100%;
+        background-color: white;
+        border-bottom: solid black 5px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: fixed;
+        text-decoration: none;
+        z-index: 100;
+        }
+        #lista{
+        list-style: none;
+        display: flex;
+        padding: 0px;
+    
+        }
+        #lista > li > a {
+    
+        display: block;
+        padding: 25px 10px;
+        color: black;
+        text-decoration: none;
+        font-size: 9px;
+        }
+    
+        #lista li:hover {
+        background-color: #BADCFF;
+        border-radius: 8px
+        }
+        #lista li ul {
+        position: absolute;
+        display: none;
+        background-color:white;
+        list-style: none;
+        border-bottom: 2px solid white;
+        border-radius: 8px;
+        }
+        #lista li ul li a {
+        text-decoration: none;
+        padding: 10px 10px;
+        color: black;
+        display: block;
+    
+        }
+        #lista li:hover > ul {
+        display: block;
+        align-items: center;
+        }
+        .logo{
+        display: flex;
+        height: 100%;
+    }
+    .bicicleta{
+    
+    
+        height: 60px;
+        background-color: #e5e5e5;
+        justify-content: center;
+        align-items: center;
+        display: flex
+    
+    
+    }
+        .title {
+    
+        text-align: center;
+        font-family: sans-serif;
+        margin-top: 45px;
+        font-size: 23px;
+    
+    
+    
+    }
+        #tabla{
+        display: none;
+        margin: 50px;
+        margin-left: 200px;
+        border: 0 solid;
+        box-shadow: 0 0 10px grey;
+        border-radius: 10px;
+        background-color: white
+    
+    }
+        #contenedor{
+    
+        justify-content: center;
+        display: flex;
+        background-color:#e5e5e5;
+        border-bottom: solid #d6d6d6 2px;
+    
+    }
+        img{
+    
+        width: 350px;
+        height: 360px;
+        border: 0px solid;
+        box-shadow: 0 0 10px grey;
+        border-radius: 10px;
+    }
+        #imagen {
+    
+        margin-top: 40px;
+        height: 400px;
+        margin-right: 0px;
+     
+    }
+        td{
+    
+        width: 50px;
+        height: 50px;
+        padding: 7px
+    
+    }
+        .contenedor2{
+    
+        display: block;
+        margin: 0px;
+        padding: 10px
+    
+    }
+    
+    body{margin: 0px}
+    
+
+
+}

@@ -2,7 +2,7 @@ import pymongo
 import os
 from src.appJsonToHTML import cargarDatos
 from src.DB.ApiMongoDB import ApiMongoDB
-from src.appJsonToHTML import PaginaCanyon as CanyonHTML, PaginaBH as BhHTML, PaginaCategorias, PaginaKTM as KTMHtml, PaginaMondraker as MondrakerHTML , PaginaOrbea as ObreaHTML, PaginaPrincipalCarretera as CarreteraHTML , PaginaPrincipalEbike as EBikeHTML , PaginaPrincipalMTB as MTBhtml , PaginasIndividuales as IndiviHTML , PaginaSpecialized as SpezHTML , PaginaCannondale, PaginaContactar
+from src.appJsonToHTML import paginaCategorias,paginaPrincipalCarretera,paginaPrincipalEbike,paginaPrincipalMTB,paginasIndividuales,paginaBH,paginaCannondale,paginaCanyon,paginaContactar,paginaKTM,paginaMondraker,paginaOrbea,paginaSpecialized
 
 myclient = pymongo.MongoClient("mongodb+srv://Fran:20Fran04.@bikecluster.fvhjzpv.mongodb.net/test")
 mydb = myclient["BikesRentalDB"]
@@ -36,12 +36,10 @@ def funciones():
     elif funcion == "Ejecutar Programa":
 
             try:    
-                BhHTML(items),CanyonHTML(items),
-                PaginaCategorias(items),SpezHTML(items),
-                MondrakerHTML(items),ObreaHTML(items),
-                EBikeHTML(items),IndiviHTML(items),
-                MTBhtml(items),CarreteraHTML(items),PaginaCannondale(items),
-                KTMHtml(items),PaginaContactar()
+                paginaCategorias(items),paginaPrincipalCarretera(items),paginaPrincipalEbike(items)
+                paginaPrincipalMTB(items),paginasIndividuales(items), paginaBH(items),paginaCannondale(items)
+                paginaCanyon(items),paginaContactar(),paginaKTM(items),paginaMondraker(items)
+                paginaOrbea(items),paginaSpecialized(items)
 
             except:
                 print ("Algo a sucedido en el programa!")
