@@ -210,11 +210,17 @@ def paginaPrincipalEbike(items):
             <!--PAGINA E-BIKE-->
             <html>
                 <head>
-                    <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
+                    <title>Rent Bike Mallorca</title>
+                    <meta name="description" content="PaginaE-bike">
+                    <meta name="keywords" content="HTML, CSS">
+                    <meta name="author" content="Francisco Javier y Antoni Serra">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv=”Content-Language” content=”es”/>
+                    <meta name="copyright" content="Copyright owner" />
                     <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
+                
 
                 <body>
                     <nav>
@@ -267,11 +273,16 @@ def paginasIndividuales(items):
 
         <!--PAGINA INDIVIDUALES-->
 
-        <html class="pag_ind">
+        <html>
         <head>
-            <title>TODO supply a title</title>
             <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Rent Bike Mallorca</title>
+                    <meta name="description" content="PaginaE-bike">
+                    <meta name="keywords" content="HTML, CSS">
+                    <meta name="author" content="Francisco Javier y Antoni Serra">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv=”Content-Language” content=”es”/>
+                    <meta name="copyright" content="Copyright owner" />
             <link rel="stylesheet" href="Individuales.css" type="text/css"/>
         </head>
         <nav>
@@ -365,9 +376,14 @@ def paginaOrbea(items):
             <!--PAGINA OBREA-->
             <html>
                 <head>
-                    <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
+                    <title>Rent Bike Mallorca</title>
+                    <meta name="description" content="PaginaE-bike">
+                    <meta name="keywords" content="HTML, CSS">
+                    <meta name="author" content="Francisco Javier y Antoni Serra">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv=”Content-Language” content=”es”/>
+                    <meta name="copyright" content="Copyright owner" />
                     <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
@@ -421,9 +437,14 @@ def paginaBH(items):
             <!--PAGINA BH-->
             <html>
                 <head>
-                    <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
+                    <title>Rent Bike Mallorca</title>
+                    <meta name="description" content="PaginaE-bike">
+                    <meta name="keywords" content="HTML, CSS">
+                    <meta name="author" content="Francisco Javier y Antoni Serra">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv=”Content-Language” content=”es”/>
+                    <meta name="copyright" content="Copyright owner" />
                     <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
@@ -478,9 +499,14 @@ def paginaKTM(items):
             <!--PAGINA KTM-->
             <html>
                 <head>
-                    <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
+                    <title>Rent Bike Mallorca</title>
+                    <meta name="description" content="PaginaE-bike">
+                    <meta name="keywords" content="HTML, CSS">
+                    <meta name="author" content="Francisco Javier y Antoni Serra">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv=”Content-Language” content=”es”/>
+                    <meta name="copyright" content="Copyright owner" />
                     <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
@@ -533,9 +559,14 @@ def paginaSpecialized(items):
             <!--PAGINA SPECIALIZED-->
             <html>
                 <head>
-                    <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
+                    <title>Rent Bike Mallorca</title>
+                    <meta name="description" content="PaginaE-bike">
+                    <meta name="keywords" content="HTML, CSS">
+                    <meta name="author" content="Francisco Javier y Antoni Serra">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv=”Content-Language” content=”es”/>
+                    <meta name="copyright" content="Copyright owner" />
                     <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
@@ -589,9 +620,14 @@ def paginaCanyon(items):
             <!--PAGINA CANYON-->
             <html>
                 <head>
-                    <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
+                    <title>Rent Bike Mallorca</title>
+                    <meta name="description" content="PaginaE-bike">
+                    <meta name="keywords" content="HTML, CSS">
+                    <meta name="author" content="Francisco Javier y Antoni Serra">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv=”Content-Language” content=”es”/>
+                    <meta name="copyright" content="Copyright owner" />
                     <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
@@ -647,9 +683,14 @@ def paginaMondraker(items):
             <!--PAGINA MONDRAKER-->
             <html>
                 <head>
-                    <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
+                    <title>Rent Bike Mallorca</title>
+                    <meta name="description" content="PaginaE-bike">
+                    <meta name="keywords" content="HTML, CSS">
+                    <meta name="author" content="Francisco Javier y Antoni Serra">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv=”Content-Language” content=”es”/>
+                    <meta name="copyright" content="Copyright owner" />
                     <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
@@ -702,9 +743,14 @@ def paginaCannondale(items):
             <!DOCTYPE html>
             <html>
                 <head>
-                    <title>Rent Bike Mallorca</title>
                     <meta charset="UTF-8">
+                    <title>Rent Bike Mallorca</title>
+                    <meta name="description" content="PaginaE-bike">
+                    <meta name="keywords" content="HTML, CSS">
+                    <meta name="author" content="Francisco Javier y Antoni Serra">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv=”Content-Language” content=”es”/>
+                    <meta name="copyright" content="Copyright owner" />
                     <link rel="stylesheet" href="paginatipos.css" type="text/css"/>
                 </head>
 
@@ -762,9 +808,14 @@ def paginaContactar():
 <html>
 
 <head>
-    <title>Rent Bike Mallorca</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Rent Bike Mallorca</title>
+                    <meta name="description" content="PaginaE-bike">
+                    <meta name="keywords" content="HTML, CSS">
+                    <meta name="author" content="Francisco Javier y Antoni Serra">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv=”Content-Language” content=”es”/>
+                    <meta name="copyright" content="Copyright owner" />
     <link rel="stylesheet" href="PaginaContacto.css" type="text/css" />
 </head>
 
