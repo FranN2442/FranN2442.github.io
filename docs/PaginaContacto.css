@@ -1,6 +1,4 @@
-@charset "UTF-8";
-
-
+@media (min-height:852px) , (max-width:1588px){
 html,body{margin:0;padding:0;height:50%;}
 html {
     background-color: #BADCFF;
@@ -61,19 +59,19 @@ html {
   }
 
 #contenedor {
-    padding-top: 20px !important;
-    padding-bottom: 100px !important;
-    float: none !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    position: relative !important;
-    height: auto !important;
-    padding-left: 40px !important;
-    max-width: none !important;
-    padding-right: 40px !important;
-    min-width: 0 !important;
-    text-align: left !important;
+    padding-top: 20px ;
+    padding-bottom: 100px ;
+    float: none;
+    top: 0;
+    left: 0 ;
+    width: 100% ;
+    position: relative ;
+    height: auto;
+    padding-left: 40px ;
+    max-width: none ;
+    padding-right: 40px;
+    min-width: 0;
+    text-align: left;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -188,9 +186,9 @@ span {
     outline: 0;
     border: 1px solid #97d848;
 }
+}
 
-@media (width:390px),
-(height:844px) {
+@media (max-width:391px) , (max-height:845px){
   nav {
     height: 45px;
     width: 100%;
@@ -251,4 +249,61 @@ span {
     margin-inline-end: 0px;
     padding-inline-start: 0px;
 }
+  .texto_mensaje {
+
+    width: 237px;
+
+}
+#mapa {
+  display: none;
+  position: relative;
+  align-self: left;
+  text-align: left;
+  margin: 5%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fbfbfb;
+  border: 3px;
+  border-color: black;
+}
+
+
+#contacto{
+  display: block;
+  align-self:right;
+  margin: 29%;
+  width: 266 px;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fbfbfb;
+  text-align: left;
+}
+input {
+  background-color: #fbfbfb;
+  width: 255px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #52d3fe;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ab4493;
+  border-color: #ab4493;
+  border-style: solid;
+  border-radius: 10px;
+  width: 266px;
+  cursor: pointer;
+}
+
 }
